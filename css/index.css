@@ -1,0 +1,90 @@
+html {
+  background: white;
+  margin: 0 5%;
+  position: relative;
+}
+
+.menu {
+  width: 78%;
+  margin: 3% 0 2% 2%;
+  display: inline-block;
+  position: relative;
+}
+
+.menu-item {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: black;
+  padding-right: 5%;
+}
+
+.logo-bg {
+  width: 15%;
+  padding: 10% 1% 2% 1%;
+  margin-top: -5%;
+  background: black;
+  border: 20px solid white;
+  display: inline-block;
+  position: absolute;
+  z-index: 2;
+}
+
+.logo {
+  color: white;
+  text-align: center;
+}
+
+.intro {
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.intro-img {
+  width: 100%;
+}
+
+.intro-title {
+  color: white;
+  position: absolute;
+  margin: -25% auto 0 5%;
+  z-index: 3;
+}
+
+.web {
+  margin: 0;
+  position: relative;
+}
+
+.web-text-box {
+  width: 30%;
+  margin: -12% 0 0 0;
+  position: absolute;
+  z-index: 2;
+}
+
+.web-title {
+  width: 50%;
+  padding: 20% 0 0 20% ;
+  margin-bottom: -12%;
+  border-top: 30px solid white;
+  border-right: 30px solid white;
+  background-color: #E6E6E6;
+  font-size: 2em;
+}
+
+.web-text {
+  padding: 15% 20% 30% 20%;
+  margin-top: 10%;
+  background-color: #E6E6E6;
+}
+
+.web-img-box {
+  margin: 2% 0 0 5%;
+  position: relative;
+  text-align: right;
+}
+
+.web-img {
+  width: 70%;
+}
