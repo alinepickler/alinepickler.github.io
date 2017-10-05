@@ -3,82 +3,97 @@
 <title>Aline Pickler</title>
 
 <link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/responsive.css">
 
-<nav class="menu">
-  <a class="menu-item" href="#">web</a>
-  <a class="menu-item" href="#">mobile</a>
-  <a class="menu-item" href="#">logo</a>
-  <a class="menu-item" href="#">print</a>
-</nav>
+<div class="row">
+  <nav class="menu col-9">
+    <a class="menu-item col-1" href="#">web</a>
+    <a class="menu-item col-1" href="#">mobile</a>
+    <a class="menu-item col-1" href="#">logo</a>
+    <a class="menu-item col-1" href="#">print</a>
+  </nav>
 
-<header class="my-logo-bg">
-  <p class="my-logo">Aline Pickler
-</header>
+  <header class="my-logo-bg col-3">
+    <p class="my-logo">Aline Pickler
+  </header>
+</div>
 
 <main>
-  <figure class="intro">
-    <a href="#">
-      <img class="intro-img" src="images/index/me.jpg" alt="Aline in a big wall">
-    </a>
-
-    <figcaption class="intro-title">
-      <h1>DESIGN & FRONT-END</h1>
-    </figcaption>
-  </figure>
-
-  <section class="web">
-    <header class="web-text-box">
-      <h2 class="web-title">Web</h2>
-      <p class="web-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dapibus tellus tempus dignissim dignissim. Nam metus tortor, vulputate non tellus vel, tempor pulvinar neque. Suspendisse consequat mattis nisi ut euismod.
-    </header>
-
-    <figure class="web-img-box">
+  <div class="row">
+    <figure class="intro col-12">
       <a href="#">
-        <img class="web-img" src="images/index/web.jpg" alt="Laptop">
+        <img class="intro-img" src="images/index/me.jpg" alt="Aline in a big wall">
       </a>
+
+      <figcaption class="intro-title col-4">
+        <h1>DESIGN & FRONT-END</h1>
+      </figcaption>
     </figure>
-  </section>
+  </div>
 
-  <section class="mobile">
-    <figure class="mobile-img-box">
-      <a href="#">
-        <img class="mobile-img" src="images/index/mobile.jpg" alt="Cell phone on a table">
-      </a>
-    </figure>
+  <div class="row">
+    <section class="web col-12">
+      <header class="web-text-box col-4">
+        <h2 class="web-title col-6">Web</h2>
+        <p class="web-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dapibus tellus tempus dignissim dignissim. Nam metus tortor, vulputate non tellus vel, tempor pulvinar neque. Suspendisse consequat mattis nisi ut euismod.
+      </header>
 
-    <header class="mobile-text-box">
-      <h2 class="mobile-title">Mobile</h2>
-      <p class="mobile-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dapibus tellus tempus dignissim dignissim. Nam metus tortor, vulputate non tellus vel, tempor pulvinar neque.
-    </header>
-  </section>
+      <figure class="web-img-box col-8">
+        <a href="#">
+          <img class="web-img" src="images/index/web.jpg" alt="Laptop">
+        </a>
+      </figure>
+    </section>
+  </div>
 
-  <section class="logo">
-    <header class="logo-text-box">
-      <h2 class="logo-title">Logo</h2>
-      <p class="logo-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dapibus tellus tempus dignissim dignissim. Nam metus tortor, vulputate non tellus vel, tempor pulvinar neque.
-    </header>
+  <div class="row">
+    <section class="mobile col-12">
+      <figure class="mobile-img-box col-6">
+        <a href="#">
+          <img class="mobile-img" src="images/index/mobile.jpg" alt="Cell phone on a table">
+        </a>
+      </figure>
 
-    <figure class="logo-img-box">
-      <a href="#">
-        <img class="logo-img" src="images/index/logo.jpg" alt="A Logo in a frame">
-      </a>
-    </figure>
-  </section>
+      <header class="mobile-text-box col-6">
+        <h2 class="mobile-title">Mobile</h2>
+        <p class="mobile-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dapibus tellus tempus dignissim dignissim. Nam metus tortor, vulputate non tellus vel, tempor pulvinar neque.
+      </header>
+    </section>
+  </div>
 
-  <section class="print">
-    <figure class="print-img-box">
-      <a href="#">
-        <img class="print-img" src="images/index/print.jpg" alt="A print on a wood table">
-      </a>
-    </figure>
+  <div class="row">
+    <section class="logo col-12">
+      <header class="logo-text-box col-6">
+        <h2 class="logo-title">Logo</h2>
+        <p class="logo-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dapibus tellus tempus dignissim dignissim. Nam metus tortor, vulputate non tellus vel, tempor pulvinar neque.
+      </header>
 
-    <header class="print-text-box">
-      <h2 class="print-title">Print</h2>
-      <p class="print-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dapibus tellus tempus dignissim dignissim. Nam metus tortor, vulputate non tellus vel, tempor pulvinar neque.
-    </header>
-  </section>
+      <figure class="logo-img-box col-7">
+        <a href="#">
+          <img class="logo-img" src="images/index/logo.jpg" alt="A Logo in a frame">
+        </a>
+      </figure>
+    </section>
+  </div>
+
+  <div class="row">
+    <section class="print col-12">
+      <figure class="print-img-box col-7">
+        <a href="#">
+          <img class="print-img" src="images/index/print.jpg" alt="A print on a wood table">
+        </a>
+      </figure>
+
+      <header class="print-text-box col-5">
+        <h2 class="print-title">Print</h2>
+        <p class="print-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dapibus tellus tempus dignissim dignissim. Nam metus tortor, vulputate non tellus vel, tempor pulvinar neque.
+      </header>
+    </section>
+  </div>
 </main>
 
-<footer>
-  <p> Aline Pickler | 2017
-</footer>
+<div class="row">
+  <footer class="col-12">
+    <p> Aline Pickler | 2017
+  </footer>
+</div>

@@ -5,42 +5,37 @@
 body {
   font-family: sans-serif;
   background: white;
-  margin: 0 5em;
+  margin: 0 5%;
   position: relative;
 }
 
 .menu {
-  width: 75%;
-  margin: 4em 0 2em 2em;
-  display: inline-block;
-  position: relative;
+  margin: 5.5% 0 2% 0;
 }
 
 .menu-item {
   text-decoration: none;
   font-size: 1em;
   color: black;
-  padding-right: 3em;
+  padding: 0 8% 3% 2%;
 }
 
 .my-logo-bg {
-  width: 23%;
-  padding: 10em 1em 1em 1em;
-  margin: -5em 0 0 auto;
   background: black;
-  border: 3em solid white;
-  display: inline-block;
-  position: absolute;
-  z-index: 2;
+  border-left: 2em solid white;
+  border-bottom: 2em solid white;
+  position: relative;
+  z-index: 3;
 }
 
 .my-logo {
+  padding: 40% 0 2% 0;
   color: white;
   text-align: center;
 }
 
 .intro {
-  margin: 0;
+  margin: -7% 0 0 0;
   position: relative;
   z-index: 1;
 }
@@ -50,127 +45,99 @@ body {
 }
 
 .intro-title {
-  width: 30%;
+  width: 80%;
   color: white;
+  text-transform: uppercase;
   position: absolute;
-  margin: -20em auto 0 7em;
+  font-size: 200%;
+  margin: -30% auto 0 5%;
   z-index: 3;
 }
 
-.web {
-  margin: 0;
-  position: relative;
-  z-index: 1;
-}
-
-.web-text-box {
-  width: 25%;
-  margin-top: -6.5em;
-  position: absolute;
-  z-index: 2;
-}
-
 .web-title {
-  width: 65%;
-  margin: 0;
-  padding: 2em 1.5em 0 1.8em ;
-  border-top: 1.5em solid white;
-  border-right: 1.5em solid white;
+  margin-top: -25%;
+  padding: 14% 5% 0 12% ;
+  border-top: 0.8em solid white;
+  border-right: 0.8em solid white;
   background-color: #E6E6E6;
-  font-size: 2em;
+  font-size: 250%;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 3;
 }
 
 .web-text {
-  margin: 0;
-  padding: 4em 4em 20em 3.5em;
+  margin: 6% 0 0 0;
+  padding: 15% 15% 50% 12%;
   background-color: #E6E6E6;
-  z-index: 1;
+  position: relative;
+  z-index: 4;
 }
 
 .web-img-box {
-  width: 100%;
-  margin: 0;
-  position: relative;
-  text-align: right;
+  margin: 2% 0 0 0;
 }
 
 .web-img {
-  width: 75%;
-  margin-top: 2.7em;
-  border-left: 3em solid white;
-}
-
-.mobile {
-  margin: 0;
-  position: relative;
-  z-index: 2;
+  width: 100%;
+  padding-left: 4%;
 }
 
 .mobile-img-box {
-  width: 45%;
-  margin: -18em 0 0 0;
+  margin: -20% 0 0 0;
   position: relative;
-  display: inline-block;
   z-index: 4;
 }
 
 .mobile-img {
   width: 100%;
-  border-top: 3em solid white;
-  border-right: 3em solid white;
-  border-bottom: 3em solid white;
+  border-top: 2.2em solid white;
+  border-right: 2.2em solid white;
+  border-bottom: 2.2em solid white;
+  margin: 0;
 }
 
 .mobile-text-box {
-  width: 55%;
-  margin: 8em 0;
-  padding: 5em;
-  border: .1em solid black;
   position: relative;
-  display: inline-block;
-  float: right;
+  margin: 15% 0;
+  padding: 5%;
+  border: .1em solid black;
 }
 
 .mobile-title {
-  text-align: center;
-}
-
-.logo {
-  width: 100%;
-  position: relative;
-  z-index: 1;
+  text-align: left;
+  text-transform: uppercase;
 }
 
 .logo-text-box {
-  width: 45%;
-  margin: 20em 0 auto 0;
-  padding: 5em;
+  margin: 15% -8.5% auto 0;
+  padding: 7%;
   border: .1em solid black;
-  position: absolute;
-  display: inline-block;
+  position: relative;
   z-index: 4;
 }
 
 .logo-title {
-  text-align: center;
+  text-align: left;
+  padding-left: 1%;
   color: black;
+  text-transform: uppercase;
 }
 
 .logo-text {
   color: black;
-  padding: 1em;
+  padding: 1% 2% 1% 1%;
 }
 
 .logo-img-box {
-  width: 100%;
-  margin: -12em 0 0 0;
+  margin: 0;
   position: relative;
-  text-align: right;
   z-index: 2;
 }
 
 .logo-img {
-  width: 60%;
+  width: 100%;
+  border-left: 1em solid white;
 }
 
 .print {
@@ -180,8 +147,7 @@ body {
 }
 
 .print-img-box {
-  width: 60%;
-  margin: 3em 0;
+  margin: 2.5% 0;
   position: relative;
   display: inline-block;
   z-index: 3;
@@ -189,18 +155,22 @@ body {
 
 .print-img {
   width: 100%;
+  margin: 0;
 }
 
 .print-text-box {
-  width: 45%;
-  margin: 15em 0 0 -10em;
-  padding: 8em;
+  margin: 15% 0 0 -5%;
+  padding: 8% 8% 10% 8%;
   background-color: #E6E6E6;
-  border-top: 3em solid white;
-  border-left: 3em solid white;
+  border-top: 2em solid white;
+  border-left: 2em solid white;
   position: absolute;
   display: inline-block;
   z-index: 4;
+}
+
+.print-title {
+  text-transform: uppercase;
 }
 
 .print-text {
@@ -208,8 +178,8 @@ body {
 }
 
 footer {
-  margin: 0 -5em -5em -5em;
-  padding: 1em 5em;
+  margin: 0;
+  padding: 1% 5%;
   position: relative;
   background-color: #E6E6E6;
   z-index: 5;
