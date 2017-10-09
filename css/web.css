@@ -1,0 +1,32 @@
+.menu {
+  margin: 5.5% 0 2% 0;
+}
+
+.menu-item {
+  text-decoration: none;
+  font-size: 1em;
+  color: black;
+  padding: 0 8% 3% 2%;
+}
+
+.my-logo-bg {
+  background: black;
+  border-left: 2em solid white;
+  border-bottom: 2em solid white;
+  position: relative;
+  z-index: 3;
+}
+
+.my-logo {
+  padding: 40% 0 2% 0;
+  color: white;
+  text-align: center;
+}
+
+footer {
+  margin: 0;
+  padding: 1% 5%;
+  position: relative;
+  background-color: #E6E6E6;
+  z-index: 5;
+}
