@@ -1,5 +1,6 @@
 .menu {
   margin: 5.5% 0 2% 0;
+  display: inline-block;
 }
 
 .menu-item {
@@ -14,13 +15,65 @@
   border-left: 2em solid white;
   border-bottom: 2em solid white;
   position: relative;
-  z-index: 3;
+  vertical-align: middle;
+  float: right;
 }
 
 .my-logo {
   padding: 40% 0 2% 0;
   color: white;
   text-align: center;
+}
+
+.grey-bg {
+  background-color: #E6E6E6;
+}
+
+.project {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 3%;
+}
+
+.project-text-box {
+  position: absolute;
+  bottom: 0;
+  margin: auto 0 15% 5%;
+
+  /* Safari */
+  -webkit-transform: rotate(-90deg);
+
+/* Firefox */
+  -moz-transform: rotate(-90deg);
+
+/* IE */
+  -ms-transform: rotate(-90deg);
+
+/* Opera */
+  -o-transform: rotate(-90deg);
+
+/* Internet Explorer */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.project-title {
+  margin: 0;
+}
+
+.project-text {
+  margin: 0;
+  padding: 3% 0;
+}
+.project-img-box {
+  position: relative;
+  float: right;
+  margin: 0 0 1% auto;
+}
+
+.project-img {
+  width: 100%;
+  position: relative;
+  float: right;
 }
 
 footer {
