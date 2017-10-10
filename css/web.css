@@ -7,7 +7,7 @@
   text-decoration: none;
   font-size: 1em;
   color: black;
-  padding: 7% 7% 0 2%;
+  padding: 7% 2% 0 2%;
   margin-bottom: 0;
 }
 
@@ -15,10 +15,10 @@
   position: relative;
   z-index: 2;
   text-decoration: none;
-  padding: 5% 0 2% 0;
+  padding: 5% 0 0 0;
   border-bottom: 1em solid #E6E6E6;
   margin: 0 0 -1.5em 0;
-  font-size: 1.7em;
+  font-size: 1.8em;
 }
 
 .page-name {
@@ -37,7 +37,7 @@
 }
 
 .my-logo {
-  padding: 20% 0 2% 0;
+  padding: 18% 0 2% 0;
   color: white;
   text-align: center;
 }
@@ -74,9 +74,9 @@
   width: 100%;
   position: relative;
   float: right;
-  border-top: 1.5em solid white;
-  border-left: 1.5em solid white;
-  border-bottom: 1.5em solid white;
+  border-top: 1em solid white;
+  border-left: 1em solid white;
+  border-bottom: 1em solid white;
 }
 
 .project-git-icon {
