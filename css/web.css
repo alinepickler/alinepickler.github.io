@@ -1,26 +1,43 @@
 .menu {
-  margin: 5.5% 0 2% 0;
-  display: inline-block;
+  margin: 0;
+  position: relative;
 }
 
 .menu-item {
   text-decoration: none;
   font-size: 1em;
   color: black;
-  padding: 0 8% 3% 2%;
+  padding: 7% 7% 0 2%;
+  margin-bottom: 0;
+}
+
+.page-name-box {
+  position: relative;
+  z-index: 2;
+  text-decoration: none;
+  padding: 5% 0 2% 0;
+  border-bottom: 1em solid #E6E6E6;
+  margin: 0 0 -1.5em 0;
+  font-size: 1.7em;
+}
+
+.page-name {
+  text-transform: uppercase;
+  text-align: center;
+  color: black;
+  margin: 0;
 }
 
 .my-logo-bg {
   background: black;
-  border-left: 2em solid white;
-  border-bottom: 2em solid white;
   position: relative;
-  vertical-align: middle;
   float: right;
+  margin: 0;
+  z-index: 2;
 }
 
 .my-logo {
-  padding: 40% 0 2% 0;
+  padding: 20% 0 2% 0;
   color: white;
   text-align: center;
 }
@@ -32,28 +49,11 @@
 .project {
   display: inline-block;
   position: relative;
-  padding-bottom: 3%;
+  margin: 0;
 }
 
 .project-text-box {
-  position: absolute;
-  bottom: 0;
-  margin: auto 0 15% 5%;
-
-  /* Safari */
-  -webkit-transform: rotate(-90deg);
-
-/* Firefox */
-  -moz-transform: rotate(-90deg);
-
-/* IE */
-  -ms-transform: rotate(-90deg);
-
-/* Opera */
-  -o-transform: rotate(-90deg);
-
-/* Internet Explorer */
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  margin: 2% 0 1% 1%;
 }
 
 .project-title {
@@ -67,13 +67,24 @@
 .project-img-box {
   position: relative;
   float: right;
-  margin: 0 0 1% auto;
+  margin: 0;
 }
 
 .project-img {
   width: 100%;
   position: relative;
   float: right;
+  border-top: 1.5em solid white;
+  border-left: 1.5em solid white;
+  border-bottom: 1.5em solid white;
+}
+
+.project-git-icon {
+  width: 9%;
+  position: relative;
+  float: right;
+  background-color: white;
+  border: 1.2em solid white;
 }
 
 footer {
