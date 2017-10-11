@@ -31,13 +31,14 @@
 .my-logo-bg {
   background: black;
   position: relative;
+  border-bottom: 1em solid white;
   float: right;
   margin: 0;
   z-index: 2;
 }
 
 .my-logo {
-  padding: 13% 0 1% 0;
+  padding: 13% 0 2% 0;
   color: white;
   text-align: center;
 }
@@ -47,45 +48,44 @@
 }
 
 .project {
-  display: inline-block;
-  position: relative;
-  margin: 0;
-}
-
-.project-img-box {
-  position: relative;
-  float: right;
-  margin: 0;
+  margin: 3% auto 3% -5%;
+  background-color: white;
 }
 
 .project-img {
   width: 100%;
   position: relative;
-  float: right;
+  margin-left: 6.6%;
+  float: left;
   border-top: 1em solid white;
-  border-left: 1em solid white;
   border-bottom: 1em solid white;
 }
 
 .project-text-box {
-  margin: 2% 0 1% 1%;
+  /* Safari */
+-webkit-transform: rotate(-90deg);
+
+/* Firefox */
+-moz-transform: rotate(-90deg);
+
+/* IE */
+-ms-transform: rotate(-90deg);
+
+/* Opera */
+-o-transform: rotate(-90deg);
+
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+margin-top: 37%;
 }
 
 .project-title {
-  margin: 0;
+  margin-top: 15%;
 }
 
 .project-text {
-  margin: 0;
-  padding: 3% 0;
-}
-
-.project-git-icon {
-  width: 9%;
-  position: relative;
-  float: right;
-  background-color: white;
-  border: 1.2em solid white;
+  margin-top: -9%;
 }
 
 footer {
