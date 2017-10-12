@@ -47,42 +47,6 @@
   background-color: #E6E6E6;
 }
 
-.project-left {
-  margin: 3% auto 3% -5%;
-  background-color: white;
-}
-
-.project-img-left {
-  width: 100%;
-  position: relative;
-  margin-left: 6.6%;
-  float: left;
-  border-top: 1em solid white;
-  border-bottom: 1em solid white;
-}
-
-.project-text-box-left {
-/* Safari */
--webkit-transform: rotate(-90deg);
-/* Firefox */
--moz-transform: rotate(-90deg);
-/* IE */
--ms-transform: rotate(-90deg);
-/* Opera */
--o-transform: rotate(-90deg);
-/* Internet Explorer */
-filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-margin-top: 37%;
-}
-
-.project-title-left {
-  margin-top: 15%;
-}
-
-.project-text-left {
-  margin-top: -10%;
-}
-
 .project-right {
   position: relative;
   float: right;
@@ -119,4 +83,40 @@ margin-top: 38%;
   float: right;
   border-top: 1em solid white;
   border-bottom: 1em solid white;
+}
+
+.project-left {
+  margin: 3% auto 3% -5%;
+  background-color: white;
+}
+
+.project-img-left {
+  width: 100%;
+  position: relative;
+  margin-left: 6.6%;
+  float: left;
+  border-top: 1em solid white;
+  border-bottom: 1em solid white;
+}
+
+.project-text-box-left {
+/* Safari */
+-webkit-transform: rotate(-90deg);
+/* Firefox */
+-moz-transform: rotate(-90deg);
+/* IE */
+-ms-transform: rotate(-90deg);
+/* Opera */
+-o-transform: rotate(-90deg);
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+margin-top: 37%;
+}
+
+.project-title-left {
+  margin-top: 15%;
+}
+
+.project-text-left {
+  margin-top: -10%;
 }
