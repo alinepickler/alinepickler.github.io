@@ -47,12 +47,12 @@
   background-color: #E6E6E6;
 }
 
-.project {
+.project-left {
   margin: 3% auto 3% -5%;
   background-color: white;
 }
 
-.project-img {
+.project-img-left {
   width: 100%;
   position: relative;
   margin-left: 6.6%;
@@ -61,31 +61,64 @@
   border-bottom: 1em solid white;
 }
 
-.project-text-box {
-  /* Safari */
+.project-text-box-left {
+/* Safari */
 -webkit-transform: rotate(-90deg);
-
 /* Firefox */
 -moz-transform: rotate(-90deg);
-
 /* IE */
 -ms-transform: rotate(-90deg);
-
 /* Opera */
 -o-transform: rotate(-90deg);
-
 /* Internet Explorer */
 filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-
 margin-top: 37%;
 }
 
-.project-title {
+.project-title-left {
   margin-top: 15%;
 }
 
-.project-text {
-  margin-top: -9%;
+.project-text-left {
+  margin-top: -10%;
+}
+
+.project-right {
+  position: relative;
+  float: right;
+  margin: 3% -5% 3% auto;
+  background-color: white;
+}
+
+.project-text-box-right {
+/* Safari */
+-webkit-transform: rotate(-90deg);
+/* Firefox */
+-moz-transform: rotate(-90deg);
+/* IE */
+-ms-transform: rotate(-90deg);
+/* Opera */
+-o-transform: rotate(-90deg);
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+margin-top: 38%;
+}
+
+.project-title-right {
+ margin-top: 4%;
+}
+
+.project-text-right {
+  margin-top: -10%;
+}
+
+.project-img-right {
+  width: 100%;
+  position: relative;
+  margin-right: 6.6%;
+  float: right;
+  border-top: 1em solid white;
+  border-bottom: 1em solid white;
 }
 
 footer {
