@@ -120,11 +120,3 @@ margin-top: 38%;
   border-top: 1em solid white;
   border-bottom: 1em solid white;
 }
-
-footer {
-  margin: 0;
-  padding: 1% 5%;
-  position: relative;
-  background-color: #E6E6E6;
-  z-index: 5;
-}

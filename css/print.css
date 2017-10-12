@@ -31,13 +31,14 @@
 .my-logo-bg {
   background: black;
   position: relative;
+  border-bottom: 1em solid white;
   float: right;
   margin: 0;
   z-index: 2;
 }
 
 .my-logo {
-  padding: 13% 0 1% 0;
+  padding: 13% 0 2% 0;
   color: white;
   text-align: center;
 }
@@ -46,44 +47,57 @@
   background-color: #E6E6E6;
 }
 
-.project {
-  display: inline-block;
-  position: relative;
-  margin: 0;
-}
-
-.project-img-box {
+.project-right {
   position: relative;
   float: right;
-  margin: 0;
+  margin: 3% 0;
+  background-color: white;
 }
 
-.project-img {
+.project-img-right {
   width: 100%;
   position: relative;
-  float: right;
-  border-top: 1em solid white;
-  border-left: 1em solid white;
-  border-bottom: 1em solid white;
+  border: 1em solid white;
 }
 
-.project-text-box {
-  margin: 2% 0 1% 1%;
+.project-text-box-right {
+ margin-left: 2%;
 }
 
-.project-title {
-  margin: 0;
+.project-title-right {
+ margin: 0;
 }
 
-.project-text {
-  margin: 0;
-  padding: 3% 0;
+.project-text-right {
+ margin: .5% 0 2% 0;
 }
 
-.project-git-icon {
-  width: 9%;
+.project-left {
+  position: relative;
+  margin: 3% 0;
+  background-color: white;
+}
+
+.project-img-box-left{
   position: relative;
   float: right;
-  background-color: white;
-  border: 1.2em solid white;
+}
+
+.project-img-left {
+  width: 100%;
+  border: 1em solid white;
+}
+
+.project-text-box-left {
+ position: relative;
+ float: right;
+ padding-left: 2%;
+}
+
+.project-title-left {
+ margin: 0;
+}
+
+.project-text-left {
+ margin: .5% 0 2% 0;
 }

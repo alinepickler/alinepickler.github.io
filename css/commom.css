@@ -39,6 +39,7 @@ footer {
   margin: 0;
   padding: 1% 5%;
   position: relative;
+  text-align: center;
   background-color: #E6E6E6;
   z-index: 5;
 }
