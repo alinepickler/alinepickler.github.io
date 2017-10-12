@@ -1,14 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:400,700');
+
+@font-face {
+    font-family: LetterGothic;
+    src: url(fonts/LetterGothicStdMedium.ttf);
+}
+
 * {
   box-sizing: border-box;
 }
 
-html { font-size: 1.2vw; }
+html { font-size: 1.3vw; }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Yantramanav', sans-serif;
   background: white;
   margin: 0 5%;
   position: relative;
+}
+
+.my-name {
+  font-family: LetterGothic;
 }
 
 .row::after {
