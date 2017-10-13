@@ -1,30 +1,22 @@
-.menu {
+.menu-index {
   margin: 4% 0 2% 0;
 }
 
-.menu-item {
+.menu-index-item {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 0.8em;
   color: black;
-  padding: 0 8% 3% 2%;
+  padding: 0 8% 2% 2%;
 }
 
 .my-name-bg {
-  padding: 9% 0 1.5% 0;
+  padding: 8.5% 0 1.5% 0;
   background: #5D6268;
-  border-left: 1em solid white;
-  border-bottom: 1em solid white;
+  border-left: 1.2em solid white;
+  border-bottom: 1.2em solid white;
   position: relative;
   z-index: 3;
-}
-
-.my-name {
-  font-size: 1.2em;
-  color: white;
-  text-align: center;
-  text-transform: uppercase;
-  margin:0;
 }
 
 .intro {
@@ -107,7 +99,7 @@
   margin: 0;
 }
 
-.logo-text-box {
+.brand-text-box {
   margin: 15% -8.5% auto 0;
   padding: 7%;
   border: .1em solid black;
@@ -115,7 +107,7 @@
   z-index: 4;
 }
 
-.logo-title {
+.brand-title {
   text-align: left;
   font-weight: 400;
   font-size: 2.5em;
@@ -125,19 +117,19 @@
   text-transform: uppercase;
 }
 
-.logo-text {
+.brand-text {
   color: black;
   margin: 0;
   padding: 2% 2% 1% 1%;
 }
 
-.logo-img-box {
+.brand-img-box {
   margin: 0;
   position: relative;
   z-index: 2;
 }
 
-.logo-img {
+.brand-img {
   width: 100%;
   border-left: 1em solid white;
 }

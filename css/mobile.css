@@ -1,46 +1,29 @@
-.menu {
-  margin: 0;
-  position: relative;
-}
-
-.menu-item {
-  text-decoration: none;
-  font-size: 1em;
-  color: black;
-  padding: 6% 2% 0 2%;
-  margin-bottom: 0;
-}
-
 .page-name-box {
   position: relative;
   z-index: 2;
   text-decoration: none;
-  padding: 5% 0 0 0;
+  padding: 5.8% 0 2% 0;
   border-bottom: 1em solid #E6E6E6;
-  margin: 0 0 -1.5em 0;
-  font-size: 1.6em;
+  margin: -8% 0 -1.5em 0;
 }
 
 .page-name {
   text-transform: uppercase;
   text-align: center;
+  font-size: 2.1em;
+  font-weight: 400;
   color: black;
   margin: 0;
 }
 
-.my-logo-bg {
-  background: black;
-  position: relative;
+.my-name-bg {
+  padding: 5% 0 1.5% 0;
+  background: #5D6268;
+  border-left: 1.2em solid white;
   border-bottom: 1em solid white;
+  position: relative;
   float: right;
-  margin: 0;
-  z-index: 2;
-}
-
-.my-logo {
-  padding: 13% 0 2% 0;
-  color: white;
-  text-align: center;
+  z-index: 3;
 }
 
 .grey-bg {

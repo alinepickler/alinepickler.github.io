@@ -18,8 +18,25 @@ body {
   position: relative;
 }
 
+.menu {
+  margin: 5.5% 0 1% 0;
+}
+
+.menu-item {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  color: black;
+  padding: 0 8% 2% 2%;
+}
+
 .my-name {
   font-family: LetterGothic;
+  font-size: 1.2em;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  margin:0;
 }
 
 .row::after {
@@ -51,6 +68,8 @@ footer {
   padding: 1% 5%;
   position: relative;
   text-align: center;
+  text-transform: uppercase;
+  font-size: 0.8em;
   background-color: #E6E6E6;
   z-index: 5;
 }
