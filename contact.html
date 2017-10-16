@@ -4,10 +4,11 @@
 
 <title>Contact | Aline Pickler</title>
 
-<link rel="stylesheet" href="css/commom.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/common-responsive.css">
 <link rel="stylesheet" href="css/contact.css">
 
-<div class="row">
+<div class="row menu-and-header">
   <nav class="menu col-9">
     <a class="menu-item col-1" href="web.html">web</a>
     <a class="menu-item col-1" href="mobile.html">mobile</a>
@@ -25,7 +26,40 @@
 </div>
 
 <div class="row">
+  <div class="menu-mobile-box">
+    <button id="menu-mobile-btn"class="menu-mobile-button">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </button>
+
+    <a href="index.html">
+      <header class="my-name-bg">
+        <p class="my-name">Aline Pickler
+      </header>
+    </a>
+  </div>
+
+  <nav id="nav-mobile" class="menu-mobile">
+    <div class="menu-mobile-item-box">
+      <a class="menu-mobile-item" href="web.html">web</a>
+      <a class="menu-mobile-item" href="mobile.html">mobile</a>
+      <a class="menu-mobile-item" href="brand.html">brand</a>
+      <a class="menu-mobile-item" href="print.html">print</a>
+      <a class="menu-mobile-item" href="contact.html">contact</a>
+    </div>
+  </nav>
+</div>
+
+<div class="row">
   <footer class="col-12">
     <p> Aline Pickler | 2017
   </footer>
 </div>
+
+<script>
+  document.getElementById("menu-mobile-btn").onclick = function() {myFunction()};
+  function myFunction() {
+    document.getElementById("nav-mobile").classList.toggle("show");
+ }
+</script>

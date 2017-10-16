@@ -1,0 +1,76 @@
+.menu-mobile-box {
+  display: none;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .menu-and-header {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .menu-mobile-box {
+    display: block;
+    width: 90%;
+    height: 10%;
+    background-color: white;
+    position: fixed;
+    z-index: 8;
+  }
+
+  .menu-mobile-button {
+    display: inline-block;
+    width: 20%;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    margin: 5% 0 1% 0;
+  }
+
+  .bar1, .bar2, .bar3 {
+    width: 4em;
+    height: .2em;
+    background-color: #333;
+    margin: .6em 0;
+    transition: 0.4s;
+  }
+
+  .my-name-bg {
+    display: inline-block;
+    width: 35%;
+    float: right;
+  }
+
+  .my-name {
+    font-size: 2em;
+    padding: 10% 0 3% 0;
+  }
+}
+
+.menu-mobile {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+  border: 2em solid white;
+  margin-top: 18%;
+  z-index: 7;
+}
+
+.menu-mobile-item-box {
+  margin-top: 30%;
+}
+
+.menu-mobile-item {
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  margin: 8% 5% 0 5%;
+  font-size: 5em;
+  color: black;
+  padding: 0 8% 2% 2%;
+}
+
+.show {display:block;}
