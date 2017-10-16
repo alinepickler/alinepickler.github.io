@@ -36,15 +36,19 @@
     transition: 0.4s;
   }
 
-  .my-name-bg {
+  .my-name-bg-mobile {
     display: inline-block;
     width: 35%;
+    padding: 8.5% 0 1.5% 0;
+    background: #5D6268;
+    border-left: 1.2em solid white;
+    border-bottom: 1.2em solid white;
+    position: relative;
     float: right;
   }
 
   .my-name {
     font-size: 2em;
-    padding: 10% 0 3% 0;
   }
 }
 
