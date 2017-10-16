@@ -2,15 +2,15 @@
   position: relative;
   z-index: 2;
   text-decoration: none;
-  padding: 5.8% 0 2% 0;
+  padding: 7.2% 0 2% 0;
   border-bottom: 1em solid #E6E6E6;
-  margin: -8% 0 -1.5em 0;
+  margin: -9% 0 -1.5em 0;
 }
 
 .page-name {
   text-transform: uppercase;
   text-align: center;
-  font-size: 2.1em;
+  font-size: 1.8em;
   font-weight: 400;
   color: black;
   margin: 0;

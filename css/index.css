@@ -1,26 +1,16 @@
-.menu-index {
-  margin: 4% 0 2% 0;
-}
-
-.menu-index-item {
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 0.8em;
-  color: black;
-  padding: 0 8% 2% 2%;
-}
 
 .my-name-bg {
-  padding: 8.5% 0 1.5% 0;
+  padding: 5% 0 1.5% 0;
   background: #5D6268;
   border-left: 1.2em solid white;
-  border-bottom: 1.2em solid white;
+  border-bottom: 1em solid white;
   position: relative;
+  float: right;
   z-index: 3;
 }
 
 .intro {
-  margin: -6.5% 0 0 0;
+  margin: 0;
   position: relative;
   z-index: 1;
 }
