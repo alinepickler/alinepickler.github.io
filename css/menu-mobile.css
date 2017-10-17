@@ -25,7 +25,7 @@
     cursor: pointer;
     border: none;
     background-color: white;
-    margin: 5% 0 1% 0;
+    margin: 4% 0 2% 0;
   }
 
   .bar1, .bar2, .bar3 {
@@ -38,8 +38,8 @@
 
   .my-name-bg-mobile {
     display: inline-block;
-    width: 35%;
-    padding: 8.5% 0 1.5% 0;
+    width: 45%;
+    padding: 9% 0 4.5% 0;
     background: #5D6268;
     position: relative;
     float: right;
@@ -52,22 +52,21 @@
 
 .menu-mobile {
   display: none;
-  width: 100%;
+  width: 101%;
   height: 100%;
   background-color: white;
   opacity: 0.92;
   position: absolute;
-  border: 2em solid white;
-  padding-top: 10%;
+  margin: 0;
   z-index: 7;
 }
 
 .menu-mobile-item-box {
   margin-top: 20%;
+  padding: 10em;
 }
 
 .menu-mobile-item {
-  width: 60%;
   text-decoration: none;
   text-transform: uppercase;
   display: block;
@@ -79,8 +78,8 @@
   transition: width 2s;
 }
 
-.menu-mobile-item:hover {
-  width: 100%;
+.menu-mobile-item:focus:active {
+  font-weight: bold;
 }
 
 .show {display:block;}
