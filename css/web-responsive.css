@@ -1,0 +1,91 @@
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .grey-bg {
+    margin-top: 20%;
+    padding-top: 5%;
+    }
+
+  .project-left {
+    width: 90%;
+    position: relative;
+    margin: 3% 0;
+    background-color: white;
+  }
+
+  .project-img-box-left{
+    width: 90%;
+    position: relative;
+    float: right;
+  }
+
+  .project-img-left {
+    border: 1em solid white;
+  }
+
+  .project-description-left {
+    width: 90%;
+    margin-left: 12%;
+  }
+
+  .project-text-box-left {
+    width: 80%;
+  }
+
+  .project-title-left {
+    margin: 0;
+    font-size: 2.5em;
+  }
+
+  .project-text-left {
+    margin: 0 0 2% 0;
+    font-size: 2em;
+  }
+
+  .project-git-icon-left {
+    width: 8%;
+    position: relative;
+    float: right;
+    margin: 0 4% 2% auto;
+    background-color: white;
+  }
+
+  .project-right {
+    width: 90%;
+    position: relative;
+    float: right;
+    margin: 3% 0;
+    background-color: white;
+    }
+
+  .project-img-right {
+    width: 90%;
+    position: relative;
+    border: 1em solid white;
+  }
+
+  .project-description-right {
+    width: 90%;
+    margin-left: 2%;
+  }
+
+  .project-text-box-right {
+    width: 80%;
+  }
+
+  .project-title-right {
+   margin: 0;
+   font-size: 2.5em;
+  }
+
+  .project-text-right {
+   margin: 0 0 2% 0;
+   font-size: 2em;
+  }
+
+  .project-git-icon-right {
+    width: 8%;
+    position: relative;
+    float: right;
+    margin: 0 4% 2% auto;
+    background-color: white;
+  }
+}

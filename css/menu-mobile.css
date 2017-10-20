@@ -10,7 +10,7 @@
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   .menu-mobile-box {
-    display: block;
+    display: inline-block;
     width: 90%;
     height: 10%;
     background-color: white;
