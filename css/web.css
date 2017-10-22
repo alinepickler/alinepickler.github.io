@@ -22,7 +22,7 @@
 
 .project-left {
   position: relative;
-  margin: 3% 0;
+  margin: 3% auto;
   background-color: white;
 }
 
@@ -37,7 +37,7 @@
 }
 
 .project-description-left {
- margin-left: 10%;
+ margin-left: 2%;
 }
 
 .project-title-left {
@@ -52,7 +52,7 @@
   width: 5%;
   position: relative;
   float: right;
-  margin-right: 3.5%;
+  margin-right: 4%;
   background-color: white;
 }
 
@@ -70,7 +70,7 @@
 }
 
 .project-description-right {
- margin-left: 1.5%;
+ margin-left: 2%;
 }
 
 .project-title-right {
@@ -85,6 +85,6 @@
   width: 5%;
   position: relative;
   float: right;
-  margin-right: 3.5%;
+  margin-right: 4%;
   background-color: white;
 }

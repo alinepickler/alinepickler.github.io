@@ -1,91 +1,54 @@
 @media only screen and (min-width: 320px) and (max-width: 768px) {
+  body {
+    background-color: #E6E6E6;
+    margin: 0;
+  }
+
   .grey-bg {
-    margin-top: 20%;
+    margin: 15% 5% 0 5%;
     padding-top: 5%;
     }
 
-  .project-left {
-    width: 90%;
+  .project-mobile {
+    width: 100%;
     position: relative;
-    margin: 3% 0;
     background-color: white;
   }
 
-  .project-img-box-left{
-    width: 90%;
+  .project-img-box-mobile{
+    width: 100%;
     position: relative;
     float: right;
   }
 
-  .project-img-left {
+  .project-img-mobile {
     border: 1em solid white;
   }
 
-  .project-description-left {
-    width: 90%;
-    margin-left: 12%;
+  .project-description-mobile {
+    width: 96%;
+    margin-left: 2%;
   }
 
-  .project-text-box-left {
+  .project-text-box-mobile {
     width: 80%;
   }
 
-  .project-title-left {
+  .project-title-mobile {
     margin: 0;
     font-size: 2.5em;
   }
 
-  .project-text-left {
+  .project-text-mobile {
     margin: 0 0 2% 0;
     font-size: 2em;
   }
 
-  .project-git-icon-left {
+  .project-git-icon-mobile {
     width: 8%;
     position: relative;
     float: right;
-    margin: 0 4% 2% auto;
-    background-color: white;
-  }
-
-  .project-right {
-    width: 90%;
-    position: relative;
-    float: right;
-    margin: 3% 0;
-    background-color: white;
-    }
-
-  .project-img-right {
-    width: 90%;
-    position: relative;
-    border: 1em solid white;
-  }
-
-  .project-description-right {
-    width: 90%;
-    margin-left: 2%;
-  }
-
-  .project-text-box-right {
-    width: 80%;
-  }
-
-  .project-title-right {
-   margin: 0;
-   font-size: 2.5em;
-  }
-
-  .project-text-right {
-   margin: 0 0 2% 0;
-   font-size: 2em;
-  }
-
-  .project-git-icon-right {
-    width: 8%;
-    position: relative;
-    float: right;
-    margin: 0 4% 2% auto;
+    margin: 0 0 2% auto;
     background-color: white;
   }
 }
