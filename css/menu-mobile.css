@@ -80,7 +80,11 @@
   transition: width 2s;
 }
 
-.menu-mobile-item:focus:active {
+.current-page {
+  font-weight: bold;
+}
+
+.menu-mobile-item:active {
   font-weight: bold;
 }
 
