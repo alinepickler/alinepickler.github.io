@@ -16,29 +16,19 @@
   margin: 0;
 }
 
-.my-name-bg {
-  padding: 5% 0 1.5% 0;
-  background: #5D6268;
-  border-left: 1.2em solid white;
-  border-bottom: 1em solid white;
-  position: relative;
-  float: right;
-  z-index: 3;
-}
-
 .grey-bg {
   background-color: #E6E6E6;
 }
 
 .project-left {
-  margin: 3% auto 3% -5%;
+  margin: 3% auto 3% -4%;
   background-color: white;
 }
 
 .project-img-left {
   width: 100%;
   position: relative;
-  margin-left: 6.6%;
+  margin-left: 5.8%;
   float: left;
   border-top: 1em solid white;
   border-bottom: 1em solid white;
@@ -69,7 +59,7 @@ margin-top: 37%;
 .project-right {
   position: relative;
   float: right;
-  margin: 3% -5% 3% auto;
+  margin: 3% -4% 3% auto;
   background-color: white;
 }
 
@@ -98,7 +88,7 @@ margin-top: 38%;
 .project-img-right {
   width: 100%;
   position: relative;
-  margin-right: 6.6%;
+  margin-right: 5.8%;
   float: right;
   border-top: 1em solid white;
   border-bottom: 1em solid white;
