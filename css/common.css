@@ -35,11 +35,10 @@ a.menu-item:hover {
 }
 
 .my-name-bg {
-  padding: 5% 0 1.5% 0;
-  background: #5D6268;
-  border-left: 1.2em solid white;
-  border-bottom: 1em solid white;
+  padding: 2% 0;
+  margin-top: 2%;
   position: relative;
+  border: .07em solid black;
   float: right;
   z-index: 3;
 }
@@ -47,7 +46,7 @@ a.menu-item:hover {
 .my-name {
   font-family: LetterGothic;
   font-size: 1.2em;
-  color: white;
+  color: black;
   text-align: center;
   text-transform: uppercase;
   margin:0;
@@ -57,7 +56,7 @@ footer {
   margin: 0;
   padding: 1% 5%;
   position: relative;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
   font-size: 0.8em;
   background-color: #E6E6E6;
@@ -67,7 +66,6 @@ footer {
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   footer {
     font-size: 2em;
-    text-align: left;
   }
 }
 

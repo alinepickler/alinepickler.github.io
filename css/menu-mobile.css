@@ -40,8 +40,9 @@
   .my-name-bg-mobile {
     display: inline-block;
     width: 45%;
-    padding: 9% 0 4.5% 0;
-    background: #5D6268;
+    padding: 2%;
+    border: .07em solid black;
+    margin-top: 2%;
     position: relative;
     float: right;
   }
