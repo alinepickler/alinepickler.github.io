@@ -1,6 +1,14 @@
 @media only screen and (min-width: 320px) and (max-width: 768px) {
+  body {
+    margin: 0;
+  }
+
+  main {
+    margin: 15% 5% 0 5%;
+  }
+
   .intro {
-    margin-top: 20%;
+    margin-top: 5%;
     position: relative;
     z-index: 1;
   }
@@ -56,7 +64,7 @@
   .mobile-text-box {
     width: 80%;
     position: absolute;
-    margin: 10%;
+    margin: 10% 5%;
     padding: 5%;
     border: .1em solid black;
     z-index: 4;
@@ -116,7 +124,7 @@
   }
 
   .print-img-box {
-    margin: 3% 0;
+    margin-top: 3%;
     position: relative;
     display: inline-block;
     z-index: 3;
@@ -128,8 +136,8 @@
   }
 
   .print-text-box {
-    width: 65%;
-    margin: 0 0 0 10%;
+    width: 70%;
+    margin: 3% 12%;
     padding: 8%;
     background-color: #E6E6E6;
     border-top: 0;

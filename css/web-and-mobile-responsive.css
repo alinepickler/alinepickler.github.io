@@ -1,13 +1,13 @@
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   body {
-    background-color: #E6E6E6;
     margin: 0;
+    background-color: #E6E6E6;
   }
 
-  .grey-bg {
+  main {
     margin: 15% 5% 0 5%;
     padding-top: 5%;
-    }
+  }
 
   .project-mobile {
     width: 100%;

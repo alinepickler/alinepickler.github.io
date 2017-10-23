@@ -11,10 +11,10 @@
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   .menu-mobile-box {
     display: inline-block;
-    width: 90%;
+    width: 100%;
     height: 10%;
     background-color: white;
-    margin: 0 5%;
+    padding: 2% 5%;
     position: fixed;
     z-index: 8;
   }
@@ -26,7 +26,7 @@
     cursor: pointer;
     border: none;
     background-color: white;
-    margin: 4% 0 2% 0;
+    margin: 2% 0;
   }
 
   .bar1, .bar2, .bar3 {
@@ -42,7 +42,7 @@
     width: 45%;
     padding: 2%;
     border: .07em solid black;
-    margin-top: 2%;
+    margin-top: 4%;
     position: relative;
     float: right;
   }
@@ -54,7 +54,7 @@
 
 .menu-mobile {
   display: none;
-  width: 101%;
+  width: 100%;
   height: 100%;
   background-color: white;
   opacity: 0.92;

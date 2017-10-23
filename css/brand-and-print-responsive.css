@@ -4,10 +4,10 @@
     margin: 0;
   }
 
-  .grey-bg {
+  main {
     margin: 15% 5% 0 5%;
     padding-top: 5%;
-    }
+  }
 
   .project-mobile {
     width: 100%;
