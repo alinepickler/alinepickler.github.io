@@ -124,7 +124,7 @@
 }
 
 .print-img-box {
-  margin: 1.2% 0;
+  margin: 1.2% 0 10% 0;
   position: relative;
   display: inline-block;
   z-index: 3;

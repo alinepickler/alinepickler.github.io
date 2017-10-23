@@ -30,7 +30,9 @@
 .project-img-right {
   width: 100%;
   position: relative;
-  border: 1em solid white;
+  border-top: 1em solid white;
+  border-left: 1em solid white;
+  border-bottom: 1em solid white;
 }
 
 .project-description-right {
@@ -66,7 +68,9 @@
 
 .project-img-left {
   width: 100%;
-  border: 1em solid white;
+  border-top: 1em solid white;
+  border-right: 1em solid white;
+  border-bottom: 1em solid white;
 }
 
 .project-description-left {
