@@ -51,7 +51,7 @@
 }
 
 .project-git-icon-left {
-  width: 5%;
+  width: 6%;
   position: relative;
   float: right;
   margin-right: 4%;
@@ -86,9 +86,9 @@
 }
 
 .project-git-icon-right {
-  width: 5%;
+  width: 6%;
   position: relative;
   float: right;
-  margin-right: 4%;
+  margin-right: 2.1%;
   background-color: white;
 }

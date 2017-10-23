@@ -47,14 +47,6 @@
  margin: .5% 0 2% 0;
 }
 
-.project-git-icon-right {
-  width: 5%;
-  position: relative;
-  float: right;
-  margin-right: 4%;
-  background-color: white;
-}
-
 .project-left {
   position: relative;
   margin: 3% auto;
@@ -83,12 +75,4 @@
 
 .project-text-left {
  margin: .5% 0 2% 0;
-}
-
-.project-git-icon-left {
-  width: 5%;
-  position: relative;
-  float: right;
-  margin-right: 4%;
-  background-color: white;
 }
