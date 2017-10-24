@@ -19,3 +19,15 @@
 .grey-bg {
   background-color: #E6E6E6;
 }
+
+.contact-img-box {
+  margin-left: 0;
+}
+
+.contact-img {
+  width: 100%;
+}
+
+.contact-icon {
+  width: 6%;
+}
