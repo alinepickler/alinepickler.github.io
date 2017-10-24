@@ -20,14 +20,52 @@
   background-color: #E6E6E6;
 }
 
+.contact {
+  margin: 0;
+}
+
 .contact-img-box {
-  margin-left: 0;
+  position: relative;
+  margin: 3% 0;
+  border-top: 1em solid white;
+  border-bottom: 1em solid white;
 }
 
 .contact-img {
   width: 100%;
 }
 
+.contact-line-box {
+  height: 80%;
+  position: absolute;
+  z-index: 2;
+  margin: 4% 8%;
+  border: .2em solid white;
+}
+
+.contact-text-box {
+  height: 100%;
+  float: right;
+  background-color: white;
+  padding: 5%;
+}
+
+.contact-title {
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 2em;
+  font-weight: 400;
+  margin: 0;
+}
+
+.contact-icon-box {
+  width: 100%;
+  margin-left: 0;
+  background-color: white;
+  text-align: center;
+}
+
 .contact-icon {
-  width: 6%;
+  width: 5%;
+  margin: 1%;
 }
