@@ -8,7 +8,12 @@
   z-index: 1;
 }
 
+.intro-img-mobile {
+  display: none;
+}
+
 .intro-img {
+  display: block; 
   width: 100%;
 }
 
