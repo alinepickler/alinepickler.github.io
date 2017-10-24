@@ -62,15 +62,14 @@ a.menu-item:hover {
 }
 
 footer {
-  margin: 0;
-  padding: 1% 5%;
+  padding: 1%;
   position: relative;
+  margin-bottom: 0;
   text-align: center;
   text-transform: uppercase;
   font-size: 0.8em;
   color: white;
   background-color: #5D6268;
-  z-index: 5;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {

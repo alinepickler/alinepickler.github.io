@@ -32,7 +32,12 @@
 }
 
 .contact-img {
+  display: block;
   width: 100%;
+}
+
+.contact-img-mobile {
+  display: none;
 }
 
 .contact-line-box {
