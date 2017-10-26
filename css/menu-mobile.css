@@ -30,11 +30,23 @@
   }
 
   .bar1, .bar2, .bar3 {
-    width: 4em;
+    width: 3.5em;
     height: .2em;
     background-color: #333;
     margin: .6em 0;
     transition: 0.4s;
+  }
+
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+  }
+
+  .change .bar2 {opacity: 0;}
+
+  .change .bar3 {
+      -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+      transform: rotate(45deg) translate(-8px, -8px) ;
   }
 
   .my-name-bg-mobile {
@@ -53,39 +65,41 @@
 }
 
 .menu-mobile {
-  display: none;
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  opacity: 0.92;
-  position: absolute;
-  margin: 0;
-  z-index: 7;
+display: none;
+width: 100%;
+height: 100%;
+background-color: white;
+opacity: 0.92;
+position: absolute;
+margin: 0;
+z-index: 7;
 }
 
 .menu-mobile-item-box {
-  margin-top: 20%;
-  padding: 10em;
+margin-top: 20%;
+padding: 10em;
 }
 
 .menu-mobile-item {
-  text-decoration: none;
-  text-transform: uppercase;
-  display: block;
-  margin: 8% 5% 0 3%;
-  font-size: 4.5em;
-  color: black;
-  padding: 0 8% 2% 5%;
-  border-bottom: .01em solid black;
-  transition: width 2s;
+text-decoration: none;
+text-transform: uppercase;
+display: block;
+margin: 8% 5% 0 3%;
+font-size: 4.5em;
+color: black;
+padding: 0 8% 2% 5%;
+border-bottom: .01em solid black;
+transition: width 2s;
 }
 
 .current-page {
-  font-weight: bold;
+font-weight: bold;
 }
 
 .menu-mobile-item:active {
-  font-weight: bold;
+font-weight: bold;
 }
 
-.show {display:block;}
+.show  {
+display:block;
+}
