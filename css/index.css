@@ -1,9 +1,7 @@
-.current-page {
-  font-weight: bold;
-}
-
 .intro {
   margin: 0;
+  padding-top: 1em;
+  border-top: 2em solid #E6E6E6;
   position: relative;
   z-index: 1;
 }
@@ -13,7 +11,7 @@
 }
 
 .intro-img {
-  display: block; 
+  display: block;
   width: 100%;
 }
 
