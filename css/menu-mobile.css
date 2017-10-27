@@ -26,27 +26,27 @@
     cursor: pointer;
     border: none;
     background-color: white;
-    margin: 2% 0;
+    margin: 4% 0;
   }
 
   .bar1, .bar2, .bar3 {
-    width: 3em;
-    height: .2em;
-    background-color: black;
-    margin: .6em 0;
+    width: 40px;
+    height: 2px;
+    background-color: #333;
+    margin: 6px 0;
     transition: 0.4s;
   }
 
   .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-8px, 8px);
-    transform: rotate(-45deg) translate(-8px, 8px);
+      -webkit-transform: rotate(-45deg) translate(-6px, 6px) ;
+      transform: rotate(-45deg) translate(-6px, 6px) ;
   }
 
   .change .bar2 {opacity: 0;}
 
   .change .bar3 {
-      -webkit-transform: rotate(45deg) translate(-8px, -8px);
-      transform: rotate(45deg) translate(-8px, -8px);
+      -webkit-transform: rotate(45deg) translate(-6px, -6px) ;
+      transform: rotate(45deg) translate(-6px, -6px) ;
   }
 
   .my-name-bg-mobile {
