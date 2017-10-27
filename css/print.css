@@ -45,7 +45,7 @@
 -o-transform: rotate(-90deg);
 /* Internet Explorer */
 filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-margin-top: 37%;
+margin-top: 41%;
 }
 
 .project-title-left {
@@ -74,7 +74,7 @@ margin-top: 37%;
 -o-transform: rotate(-90deg);
 /* Internet Explorer */
 filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-margin-top: 38%;
+margin-top: 42%;
 }
 
 .project-title-right {
