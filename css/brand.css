@@ -23,15 +23,17 @@
 -o-transform: rotate(-90deg);
 /* Internet Explorer */
 filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-margin-top: 41%;
+margin: 5% auto 0 36%;
+position: absolute;
+z-index: 3;
 }
 
 .project-title-left {
-  margin-top: 15%;
+  margin: 0;
 }
 
 .project-text-left {
-  margin-top: -10%;
+  margin: 0;
 }
 
 .project-right {
@@ -52,15 +54,17 @@ margin-top: 41%;
 -o-transform: rotate(-90deg);
 /* Internet Explorer */
 filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-margin-top: 42%;
+margin: 18% 0 0 49%;
+position: absolute;
+z-index: 3;
 }
 
 .project-title-right {
- margin-top: 4%;
+ margin: 0;
 }
 
 .project-text-right {
-  margin-top: -10%;
+  margin: 0;
 }
 
 .project-img-right {

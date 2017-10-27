@@ -36,19 +36,17 @@
   -o-transform: rotate(-90deg);
   /* Internet Explorer */
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-  width: 20%;
-  position: absolute;
-  z-index: 2;
-  margin-top: 42%;
+  width: 40%;
+  margin: 29.5% auto 0 -16%;
   }
 
   .project-title-mobile {
-    margin-top: -45%;
+    margin: 0;
     font-size: 2em;
   }
 
   .project-text-mobile {
-    margin-top: -12%;
+    margin: 0;
     font-size: 1.3em;
   }
 
@@ -63,19 +61,17 @@
     -o-transform: rotate(-90deg);
     /* Internet Explorer */
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-    width: 20%;
-    position: absolute;
-    z-index: 2;
-    margin-top: 48%;
+    width: 40%;
+    margin: 35% auto 0 -15.5%;
   }
 
   .project-title-right-mobile {
-    margin-top: -45%;
+    margin: 0;
     font-size: 2em;
   }
 
   .project-text-right-mobile {
-    margin-top: -14%;
+    margin: 0;
     font-size: 1.3em;
   }
 }
