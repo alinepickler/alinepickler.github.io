@@ -4,11 +4,11 @@
   }
 
   main {
-    margin: 15% 5% 0 5%;
+    margin: 15% 3% 0 3%;
   }
 
   .intro {
-    margin-top: 5%;
+    margin-top: 0;
     position: relative;
     z-index: 1;
   }
@@ -49,7 +49,7 @@
   }
 
   .web-text {
-    margin: 2.5% 0 0 0;
+    margin: 2.4% 0 0 0;
     padding: 7% 10%;
     background-color: #E6E6E6;
     font-size: 2.5em;
