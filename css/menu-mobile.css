@@ -65,41 +65,42 @@
 }
 
 .menu-mobile {
-display: none;
-width: 100%;
-height: 100%;
-background-color: white;
-opacity: 0.92;
-position: absolute;
-margin: 0;
-z-index: 7;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: 0.92;
+  position: absolute;
+  margin: 0;
+  z-index: 7;
 }
 
 .menu-mobile-item-box {
-margin-top: 20%;
-padding: 10em;
+  margin-top: 20%;
+  padding: 10em;
 }
 
 .menu-mobile-item {
-text-decoration: none;
-text-transform: uppercase;
-display: block;
-margin: 8% 5% 0 3%;
-font-size: 4.5em;
-color: black;
-padding: 0 8% 2% 5%;
-border-bottom: .01em solid black;
-transition: width 2s;
+  width: 95%;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  margin: 8% 5% 0 3%;
+  font-size: 4.5em;
+  color: black;
+  padding: 0 8% 2% 5%;
+  border-bottom: .01em solid black;
+  transition: width 2s;
 }
 
 .current-page {
-font-weight: bold;
+  font-weight: bold;
 }
 
 .menu-mobile-item:active {
-font-weight: bold;
+  font-weight: bold;
 }
 
 .show  {
-display:block;
+  display:block;
 }
