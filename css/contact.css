@@ -48,7 +48,17 @@
   text-align: center;
 }
 
+.contact-icon-box a {
+  text-decoration: none;
+}
+
 .contact-icon {
   width: 5%;
   margin: 1%;
+}
+
+.contact-icon:hover {
+  padding: .5%;
+  border: .1em solid black;
+  transition: 0.2s;
 }

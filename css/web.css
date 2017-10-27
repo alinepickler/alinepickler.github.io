@@ -36,6 +36,12 @@
   background-color: white;
 }
 
+.project-git-icon-left:hover {
+  padding: .5%;
+  border: .1em solid black;
+  transition: 0.2s;
+}
+
 .project-right {
   position: relative;
   float: right;
@@ -69,4 +75,10 @@
   float: right;
   margin-right: 2.1%;
   background-color: white;
+}
+
+.project-git-icon-right:hover {
+  padding: .5%;
+  border: .1em solid black;
+  transition: 0.2s;
 }
