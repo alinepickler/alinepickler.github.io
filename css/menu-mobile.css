@@ -2,19 +2,19 @@
   display: none;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 780px) {
   .menu-and-header {
     display: none;
   }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 780px) {
   .menu-mobile-box {
     display: inline-block;
     width: 100%;
     height: 10%;
     background-color: white;
-    padding: 2% 3%;
+    padding: 3% 3%;
     position: fixed;
     z-index: 8;
   }
