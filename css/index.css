@@ -26,6 +26,10 @@
   z-index: 3;
 }
 
+.web-text-box {
+  color: black;
+}
+
 .web-title {
   margin-top: -25%;
   padding: 10.5% 5% 0 12% ;
@@ -75,6 +79,7 @@
   margin: 15% 0;
   padding: 5%;
   border: .1em solid black;
+  color: black;
 }
 
 .mobile-title {
@@ -89,6 +94,7 @@
   margin: 15% -8.5% auto 0;
   padding: 7% 11% 7% 7%;
   border: .1em solid black;
+  color: black;
   position: relative;
   z-index: 4;
 }
@@ -144,6 +150,7 @@
   background-color: #E6E6E6;
   border-top: 1.2em solid white;
   border-left: 1.2em solid white;
+  color: black;
   position: absolute;
   display: inline-block;
   z-index: 4;
