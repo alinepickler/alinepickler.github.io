@@ -1,6 +1,6 @@
 # alinepickler.github.io
 
-<h2>Synopsis</h2>
+## Synopsis
 
-<p>This project is a portfolio page that shows my last works as a UI Designer and Front-end Developer. To build it I used HTML5, CSS3 and JavaScript.
+This is a portfolio page that shows my latest work as a UI Designer and Front-end Developer. To build it I used HTML5, CSS3 and JavaScript.
 
