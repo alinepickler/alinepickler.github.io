@@ -1,84 +1,22 @@
-.project-left {
-  position: relative;
-  margin: 3% auto;
-  background-color: white;
+.ui-title-box {
+  border-bottom: 0.07rem solid #A6A6A6;
 }
 
-.project-img-box-left{
-  position: relative;
-  float: right;
+.ui-title {
+  margin: 0.2rem auto 0.2rem 5rem;
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: grey;
 }
 
-.project-img-left {
+.ui-content {
+  padding: 1rem 5rem;
+}
+
+.web-img-box {
+  margin: 0;
+}
+
+.web-img {
   width: 100%;
-  border-top: 1em solid white;
-  border-right: 1em solid white;
-  border-bottom: 1em solid white;
-}
-
-.project-description-left {
- margin-left: 2%;
-}
-
-.project-title-left {
- margin: 0;
-}
-
-.project-text-left {
- margin: .5% 0 3% 0;
-}
-
-.project-git-icon-left {
-  width: 6%;
-  position: relative;
-  float: right;
-  margin-right: 4%;
-  background-color: white;
-}
-
-.project-git-icon-left:hover {
-  padding: .5%;
-  border: .1em solid black;
-  transition: 0.2s;
-}
-
-.project-right {
-  position: relative;
-  float: right;
-  margin: 3% 0;
-  background-color: white;
-}
-
-.project-img-right {
-  width: 100%;
-  position: relative;
-  border-top: 1em solid white;
-  border-left: 1em solid white;
-  border-bottom: 1em solid white;
-}
-
-.project-description-right {
- margin-left: 2%;
-}
-
-.project-title-right {
- margin: 0;
-}
-
-.project-text-right {
- margin: .5% 0 3% 0;
-}
-
-.project-git-icon-right {
-  width: 6%;
-  position: relative;
-  float: right;
-  margin-right: 2.1%;
-  background-color: white;
-}
-
-.project-git-icon-right:hover {
-  padding: .5%;
-  border: .1em solid black;
-  transition: 0.2s;
 }
