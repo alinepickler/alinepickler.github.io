@@ -1,0 +1,22 @@
+.current-page-desktop {
+  border-bottom: 0.06rem solid  #404040;
+}
+
+.img-title {
+  margin: 0.2rem auto 0.2rem 0;
+  padding-left: 21%;
+  border-bottom: 0.06rem solid #A6A6A6;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.img-box {
+  float: none;
+  display: block;
+  margin: 0 auto;
+  padding: 2rem 0 0 0;
+}
+
+img {
+  width: 100%;
+}
