@@ -72,7 +72,7 @@ footer {
   padding: 0.6rem 5rem;
   text-align: right;
   text-transform: uppercase;
-  font-size: 0.8em;
+  font-size: 0.7em;
   color: white;
   background-color: grey;
 }
@@ -88,8 +88,8 @@ footer {
 }
 
 .footer-icon {
-  width: 1.8rem;
-  margin: 0.3rem 0 0.2rem 1.5rem;
+  width: 1.6rem;
+  margin: 0.3rem 0 0.2rem 1.2rem;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 780px) {

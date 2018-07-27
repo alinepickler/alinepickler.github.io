@@ -1,3 +1,7 @@
+.current-page-desktop {
+  border-bottom: 0.06rem solid  #404040;
+}
+
 .intro {
   margin: 0;
   position: relative;
@@ -18,7 +22,7 @@
 
 .intro-title-container {
   position: relative;
-  margin-top: 4rem;
+  margin-top: 3.5rem;
   border-top: 0.1em solid white;
   border-left: 0.1em solid white;
   border-bottom: 0.1em solid white;
