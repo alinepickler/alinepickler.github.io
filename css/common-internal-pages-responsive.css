@@ -1,0 +1,36 @@
+main {
+  margin: 12rem 0 0 0;
+  padding-bottom: 8rem;
+}
+
+.img-box {
+  width: 90%;
+  float: none;
+  display: block;
+  padding: 5rem 0 0 0;
+}
+
+.img-title {
+  width: 40%;
+  margin: 1.5rem auto 0 0;
+  padding-left: 5rem;
+  border-bottom: 0.06rem solid #A6A6A6;
+  font-size: 2.8rem;
+}
+
+.footer-text {
+  width: 50%;
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.footer-icon-box {
+  width: 50%;
+}
+
+.footer-icon {
+  width: 5rem;
+  margin: 2rem 0 2rem 5rem;
+  text-align: center;
+}
