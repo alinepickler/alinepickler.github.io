@@ -4,7 +4,7 @@
   }
 
   main {
-    margin: 15% 3% 0 3%;
+    margin: 15% 0 0 0;
   }
 
   .intro {
@@ -22,16 +22,21 @@
     width: 100%;
   }
 
+  .intro-title-container {
+    width: 45%;
+    margin-top: 6rem;
+    border-top: 0.25em solid white;
+    border-left: 0.25em solid white;
+    border-bottom: 0.25em solid white;
+  }
+
+  .intro-title-bg {
+    margin: 2rem auto 2rem 2rem;
+    padding: 2rem 0 2rem 3rem;
+  }
+
   .intro-title {
-    width: 40%;
-    color: white;
-    text-transform: uppercase;
-    font-weight: bold;
-    line-height: 90%;
-    position: relative;
-    font-size: 4.5em;
-    margin: -30% auto 0 10%;
-    z-index: 3;
+    font-size: 5rem;
   }
 
   .web-title {
