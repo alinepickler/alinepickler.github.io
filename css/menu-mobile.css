@@ -13,19 +13,19 @@
     display: inline-block;
     width: 100%;
     background-color: white;
-    padding: 3%;
+    padding: 3rem 5rem;
     position: fixed;
     z-index: 8;
   }
 
   .menu-mobile-button {
     display: inline-block;
-    width: 20%;
     position: relative;
+    padding: 0;
     cursor: pointer;
     border: none;
     background-color: white;
-    margin: 2% 0
+    float: right;
   }
 
   .bar1, .bar2, .bar3 {
@@ -50,16 +50,12 @@
 
   .my-name-bg-mobile {
     display: inline-block;
-    width: 45%;
-    margin-top: 2.5%;
-    padding: 2%;
-    border: .07em solid black;
     position: relative;
-    float: right;
+    padding-top: 2rem;
   }
 
   .my-name {
-    font-size: 2em;
+    font-size: 3rem;
   }
 }
 
@@ -68,24 +64,24 @@
   width: 100%;
   height: 100%;
   background-color: white;
-  opacity: 0.92;
+  opacity: 0.95;
   position: absolute;
   margin: 0;
   z-index: 7;
 }
 
 .menu-mobile-item-box {
-  margin-top: 20%;
+  margin-top: 12rem;
   padding: 10em;
 }
 
 .menu-mobile-item {
   width: 95%;
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: capitalize;
   display: block;
   margin: 8% 5% 0 3%;
-  font-size: 4.5em;
+  font-size: 4em;
   color: black;
   padding: 0 8% 2% 5%;
   border-bottom: .01em solid black;
