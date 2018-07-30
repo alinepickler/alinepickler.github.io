@@ -4,7 +4,7 @@
   }
 
   main {
-    margin: 15% 3% 0 3%;
+    margin: 12rem 0 0 0;
   }
 
   .intro {
@@ -22,144 +22,98 @@
     width: 100%;
   }
 
+  .intro-title-container {
+    width: 45%;
+    margin-top: 6rem;
+    border-top: 0.25em solid white;
+    border-left: 0.25em solid white;
+    border-bottom: 0.25em solid white;
+  }
+
+  .intro-title-bg {
+    margin: 2rem auto 2rem 2rem;
+    padding: 2rem 0 2rem 3rem;
+  }
+
   .intro-title {
-    width: 40%;
-    color: white;
-    text-transform: uppercase;
-    font-weight: bold;
-    line-height: 90%;
-    position: relative;
-    font-size: 4.5em;
-    margin: -30% auto 0 10%;
-    z-index: 3;
+    font-size: 5rem;
   }
 
-  .web-title {
-    width: 30%;
-    margin-top: -10%;
-    padding: 4.5% 5% 0 10% ;
-    border-top: .7em solid white;
-    border-right: .7em solid white;
-    background-color: #E6E6E6;
-    font-size: 3.2em;
-    font-weight: 400;
-    text-transform: uppercase;
-    position: relative;
-    z-index: 3;
+  .ui-title {
+    width: 50%;
+    padding-bottom: 0.2rem;
+    margin: 10rem auto 2rem 0;
+    font-size: 2.8rem;
   }
 
-  .web-text {
-    margin: 2.5% 0 0 0;
-    padding: 7% 10%;
-    background-color: #E6E6E6;
-    font-size: 2.5em;
-    position: relative;
-    z-index: 4;
+  .web-mobile-img-box {
+    width: 55%;
+    padding: 0 3rem 0 0;
   }
 
-  .web-img-box {
-    margin: 3% 0 0 0;
+  .web-mobile-title {
+    font-size: 5rem;
+    line-height: 5rem;
+    padding: 2rem 0 2rem 0;
   }
 
-  .web-img {
-    width: 100%;
-    padding-left: 0;
-  }
-
-  .mobile-text-box {
-    width: 80%;
-    position: absolute;
-    margin: 10% 5%;
-    padding: 5%;
-    border: .1em solid black;
-    z-index: 4;
-  }
-
-  .mobile-title {
-    text-align: left;
-    text-transform: uppercase;
-    font-size: 3em;
-    font-weight: 400;
+  .web-mobile-text {
     margin: 0;
+    padding-bottom: 2rem;
+    font-size: 2.8rem;
   }
 
-  .mobile-text {
-    font-size: 2.5em;
-  }
-
-  .mobile-img-box {
-    margin: 62% 0 0 0;
-    position: relative;
-
-  }
-
-  .mobile-img {
+  .mobile-img-box-1 {
     width: 100%;
-    border: 0;
-    margin: 0;
+    margin-top: 2rem;
   }
 
-  .brand-text-box {
-    width: 80%;
-    margin: 10%;
-    padding: 5%;
-    border: .1em solid black;
-    position: relative;
-    z-index: 4;
+  .mobile-img-box-2 {
+    width: 45%;
+    margin: 12rem 0 0 0;
   }
 
-  .brand-title {
-    font-size: 3em;
+  .print-brand-box {
+    padding: 0;
   }
 
-  .brand-text {
-    font-size: 2.5em;
-    padding: 2% 0 0 0;
+  .print-brand-text-box {
+    width: 55%;
+    padding: 0 3rem 0 0;
   }
 
-  .brand-img-box {
-    margin: 0;
-    position: relative;
-    z-index: 2;
-  }
-
-  .brand-img {
-    width: 100%;
-    border-left: 0;
-  }
-
-  .print-img-box {
-    margin-top: 3%;
-    position: relative;
-    display: inline-block;
-    z-index: 3;
-  }
-
-  .print-img {
-    width: 100%;
-    margin: 0;
-  }
-
-  .print-text-box {
+  .print-brand-title {
     width: 70%;
-    margin: 3% 12%;
-    padding: 8%;
-    background-color: #E6E6E6;
-    border-top: 0;
-    border-left: 0;
-    position: relative;
-    float: right;
-    display: block;
-    z-index: 4;
+    font-size: 5rem;
+    line-height: 5rem;
+    padding: 2rem 0 2rem 0;
   }
 
-  .print-title {
-    text-transform: uppercase;
-    font-size: 3em;
+  .print-brand-text {
+    margin: 0;
+    padding-bottom: 2rem;
+    font-size: 2.8rem;
   }
 
-  .print-text {
-    color: black;
-    font-size: 2.5em;
+  .brand-img-box-1 {
+    width: 45%;
+    margin: 3rem 0 0 0;
+  }
+
+  .footer-text {
+    width: 50%;
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  .footer-icon-box {
+    width: 50%;
+  }
+
+  .footer-icon {
+    width: 5rem;
+    margin:1.5rem 0 1.5rem 5rem;
+    text-align: center;
   }
 }

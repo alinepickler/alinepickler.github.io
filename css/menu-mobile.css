@@ -12,54 +12,51 @@
   .menu-mobile-box {
     display: inline-block;
     width: 100%;
+    height: 12rem;
+    margin: 0;
+    padding: 3rem 5rem;
     background-color: white;
-    padding: 3%;
     position: fixed;
     z-index: 8;
   }
 
   .menu-mobile-button {
     display: inline-block;
-    width: 20%;
     position: relative;
     cursor: pointer;
     border: none;
     background-color: white;
-    margin: 2% 0
+    float: right;
   }
 
   .bar1, .bar2, .bar3 {
-    width: 40px;
-    height: 2px;
+    width: 8rem;
+    height: 0.3rem;
     background-color: #333;
-    margin: 6px 0;
-    transition: 0.4s;
+    margin: 1.4rem 0;
+    transition: 0.3s;
   }
 
   .change .bar1 {
-      -webkit-transform: rotate(-45deg) translate(-6px, 6px) ;
-      transform: rotate(-45deg) translate(-6px, 6px) ;
+      -webkit-transform: rotate(-45deg) translate(-1.2rem, 1.2rem) ;
+      transform: rotate(-45deg) translate(-1.2rem, 1.2rem) ;
   }
 
   .change .bar2 {opacity: 0;}
 
   .change .bar3 {
-      -webkit-transform: rotate(45deg) translate(-6px, -6px) ;
-      transform: rotate(45deg) translate(-6px, -6px) ;
+      -webkit-transform: rotate(45deg) translate(-1.2rem, -1.2rem) ;
+      transform: rotate(45deg) translate(-1.2rem, -1.2rem) ;
   }
 
   .my-name-bg-mobile {
     display: inline-block;
-    width: 45%;
-    margin-top: 2.5%;
-    padding: 2%;
-    border: .07em solid black;
     position: relative;
-    float: right;
+    padding-top: 2rem;
   }
 
   .my-name {
-    font-size: 2em;
+    font-size: 3rem;
   }
 }
 
@@ -68,24 +65,24 @@
   width: 100%;
   height: 100%;
   background-color: white;
-  opacity: 0.92;
-  position: absolute;
+  opacity: 0.95;
+  position: fixed;
   margin: 0;
   z-index: 7;
 }
 
 .menu-mobile-item-box {
-  margin-top: 20%;
-  padding: 10em;
+  margin-top: 12rem;
+  padding: 10rem;
 }
 
 .menu-mobile-item {
   width: 95%;
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: capitalize;
   display: block;
   margin: 8% 5% 0 3%;
-  font-size: 4.5em;
+  font-size: 4em;
   color: black;
   padding: 0 8% 2% 5%;
   border-bottom: .01em solid black;

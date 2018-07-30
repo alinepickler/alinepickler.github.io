@@ -1,168 +1,159 @@
+.current-page-desktop {
+  border-bottom: 0.06rem solid  #404040;
+}
+
 .intro {
   margin: 0;
-  padding-top: 1em;
-  border-top: 2em solid #E6E6E6;
   position: relative;
-  z-index: 1;
 }
 
 .intro-img-mobile {
   display: none;
 }
 
+.intro-img-container {
+  z-index: 1;
+  position: absolute;
+}
+
 .intro-img {
-  display: block;
   width: 100%;
 }
 
+.intro-title-container {
+  position: relative;
+  margin-top: 3.5rem;
+  border-top: 0.1em solid white;
+  border-left: 0.1em solid white;
+  border-bottom: 0.1em solid white;
+  float: right;
+  z-index: 3;
+}
+
+.intro-title-bg {
+  text-decoration: none;
+  background-color: white;
+  margin: 3% auto 3% 3%;
+  padding: 3% 0 3% 7%;
+}
+
 .intro-title {
-  color: white;
+  width: 50%;
+  color: grey;
   text-transform: uppercase;
   font-weight: bold;
   line-height: 90%;
-  position: relative;
-  font-size: 4.5em;
-  margin: -26% auto 0 7%;
-  z-index: 3;
+  font-size: 3.6em;
+  margin: 0;
 }
 
-.web-text-box {
-  color: black;
+.ui-title {
+  margin: 5rem auto 0.2rem 0;
+  padding-left: 5rem;
+  border-bottom: 0.06rem solid #A6A6A6;
+  font-size: 1rem;
+  font-weight: normal;
+  color: grey;
 }
 
-.web-title {
-  margin-top: -25%;
-  padding: 10.5% 5% 0 12% ;
-  border-top: 0.5em solid white;
-  border-right: 0.5em solid white;
-  background-color: #E6E6E6;
-  font-size: 2.6em;
-  font-weight: 400;
-  text-transform: uppercase;
-  position: relative;
-  z-index: 3;
-}
-
-.web-text {
-  margin: 4% 0 0 0;
-  padding: 14% 15% 50% 13%;
-  background-color: #E6E6E6;
-  position: relative;
-  z-index: 4;
+.ui-content {
+  padding: 1rem 5rem;
 }
 
 .web-img-box {
-  margin: 1.3% 0 0 0;
+  margin: 0;
 }
 
 .web-img {
   width: 100%;
-  padding-left: 2.5%;
 }
 
-.mobile-img-box {
-  margin: -20% 0 0 0;
-  position: relative;
-  z-index: 4;
+.web-mobile-img-box {
+  padding: 0 1.2rem;
+  margin: 0;
 }
 
-.mobile-img {
+.web-mobile-title {
+  width: 70%;
+  font-size: 2.3rem;
+  line-height: 2.3rem;
+  color: grey;
+  margin: 0;
+}
+
+.web-mobile-title span {
+  color: black;
+}
+
+.web-mobile-text {
+  margin: 1rem 0 0 0;
+}
+
+.mobile-img-box-1 {
+  margin-top: 1.5rem;
+}
+
+.mobile-img-1 {
   width: 100%;
-  border-top: 1.2em solid white;
-  border-right: 1.2em solid white;
-  border-bottom: 1.2em solid white;
+}
+
+.mobile-img-box-2 {
   margin: 0;
 }
 
-.mobile-text-box {
-  position: relative;
-  margin: 15% 0;
-  padding: 5%;
-  border: .1em solid black;
-  color: black;
-}
-
-.mobile-title {
-  text-align: left;
-  text-transform: uppercase;
-  font-size: 2em;
-  font-weight: 400;
-  margin: 0;
-}
-
-.brand-text-box {
-  margin: 15% -8.5% auto 0;
-  padding: 7% 11% 7% 7%;
-  border: .1em solid black;
-  color: black;
-  position: relative;
-  z-index: 4;
-}
-
-.brand-title {
-  text-align: left;
-  font-weight: 400;
-  font-size: 2.5em;
-  padding-left: 1%;
-  margin: 0;
-  color: black;
-  text-transform: uppercase;
-}
-
-.brand-text {
-  color: black;
-  margin: 0;
-  padding: 2% 2% 1% 1%;
-}
-
-.brand-img-box {
-  margin: 0;
-  position: relative;
-  z-index: 2;
-}
-
-.brand-img {
+.mobile-img-2 {
   width: 100%;
-  border-left: 1em solid white;
 }
 
-.print {
-  width: 100%;
-  margin: 0;
-  position: relative;
+.dd-title-box {
+  border-bottom: 0.07rem solid grey;
+  margin-top: 2rem;
+}
+
+.dd-title {
+  margin: 3rem auto 0.2rem 5rem;
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: grey;
+}
+
+.dd-content {
+  padding: 1rem 5rem;
 }
 
 .print-img-box {
-  margin: 1.2% 0 10% 0;
-  position: relative;
-  display: inline-block;
-  z-index: 3;
+  margin: 0;
 }
 
 .print-img {
   width: 100%;
+}
+
+.print-brand-box {
+  padding: 0 0 0 1.2rem;
   margin: 0;
 }
 
-.print-text-box {
-  margin: 15% 0 0 -5%;
-  padding: 5% 6% 8% 8%;
-  background-color: #E6E6E6;
-  border-top: 1.2em solid white;
-  border-left: 1.2em solid white;
+.print-brand-title {
+  width: 70%;
+  font-size: 2.3rem;
+  line-height: 2.3rem;
   color: black;
-  position: absolute;
-  display: inline-block;
-  z-index: 4;
-}
-
-.print-title {
-  text-transform: uppercase;
-  font-size: 2em;
-  font-weight: 400;
   margin: 0;
 }
 
-.print-text {
-  color: black;
+.print-brand-title span {
+  color: grey;
+}
+
+.print-brand-text {
+  margin: 1rem 0 0 0;
+}
+
+.brand-img-box-1 {
+  margin-top: 1.5rem;
+}
+
+.brand-img-1 {
+  width: 100%;
 }
