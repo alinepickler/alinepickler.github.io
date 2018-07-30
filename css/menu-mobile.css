@@ -66,14 +66,14 @@
   height: 100%;
   background-color: white;
   opacity: 0.95;
-  position: absolute;
+  position: fixed;
   margin: 0;
   z-index: 7;
 }
 
 .menu-mobile-item-box {
   margin-top: 12rem;
-  padding: 10em;
+  padding: 10rem;
 }
 
 .menu-mobile-item {

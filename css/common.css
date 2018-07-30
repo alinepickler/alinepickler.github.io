@@ -43,7 +43,7 @@ a.menu-item:hover {
 }
 
 .grey-bg {
-  background-color: #E5E5E5;
+  background-color: #F2F2F2;
 }
 
 .my-name-bg {
@@ -65,11 +65,10 @@ main {
 }
 
 footer {
-  padding: 1%;
   position: relative;
   display: inline-block;
   margin-bottom: 0;
-  padding: 0.6rem 5rem;
+  padding: 0.4rem 5rem;
   text-align: right;
   text-transform: uppercase;
   font-size: 0.7em;
