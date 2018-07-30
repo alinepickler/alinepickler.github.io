@@ -47,8 +47,12 @@
   margin: 0;
 }
 
+.margin-top {
+  margin-top: 3rem;
+}
+
 .ui-title {
-  margin: 5rem auto 0.2rem 0;
+  margin: 2rem auto 0.2rem 0;
   padding-left: 5rem;
   border-bottom: 0.06rem solid #A6A6A6;
   font-size: 1rem;
