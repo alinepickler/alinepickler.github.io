@@ -123,6 +123,13 @@ img {
   font-family: 'Yantramanav', sans-serif;
 }
 
+/* White bar across the full width; padding replaces the shared margin */
+.menu-and-header {
+  margin: 0;
+  padding: 1.2rem 5rem 0.8rem 5rem;
+  background: white;
+}
+
 .current-page-desktop {
   border-bottom: 0.06rem solid #404040;
 }
