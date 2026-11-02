@@ -112,7 +112,22 @@
     font-size: 0.9375rem;
   }
 
+  .case-content {
+    display: block;
+  }
+
+  .case-img-box {
+    margin: 0.5rem 0 1rem 0;
+  }
+
+  .case-phone {
+    width: 55%;
+    margin: 0 auto;
+    border-width: 0.375rem;
+    border-radius: 1.5rem;
+  }
+
   .case-text-box {
-    padding: 0;
+    max-width: none;
   }
 }
