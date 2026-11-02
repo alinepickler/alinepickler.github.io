@@ -1,54 +1,106 @@
-.img-title {
-  margin: 0.2rem auto 0.2rem 0;
-  padding-left: 21%;
-  border-bottom: 0.06rem solid #A6A6A6;
-  font-size: 1rem;
-  font-weight: normal;
-}
+/* Earlier work page, built on css/tokens.css */
 
-.img-box {
-  float: none;
-  display: block;
-  margin: 0 auto;
-  padding: 2rem 0 0 0;
-}
-
-img {
-  width: 100%;
-  height: auto;
+.work-header {
+  padding-top: clamp(40px, 6vw, 80px);
 }
 
 .work-page-title {
   margin: 0;
-  padding: 3rem 0 0 21%;
-  font-size: 3.2rem;
-  line-height: 1;
-  color: grey;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: clamp(44px, 6vw, 80px);
+  line-height: 0.95;
   text-transform: uppercase;
 }
 
+.work-lead {
+  margin: 20px 0 0 0;
+  max-width: 56ch;
+  font-size: var(--text-lead);
+  color: var(--ink-2);
+}
+
 .work-jump {
-  padding: 1.2rem 0 0 21%;
+  display: flex;
+  gap: 24px;
+  margin-top: 24px;
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .work-jump a {
-  margin-right: 1.6rem;
-  color: black;
+  color: var(--ink);
   text-decoration: none;
-  font-size: 1rem;
+  border-bottom: 1px solid transparent;
 }
 
 .work-jump a:hover {
-  border-bottom: 0.06rem solid #404040;
+  color: var(--accent);
+  border-bottom-color: var(--accent);
 }
 
-.work-heading {
-  margin: 4rem 0 0 0;
-  padding-left: 21%;
-  font-size: 2.3rem;
-  line-height: 1;
+.work-section {
+  margin-top: var(--section-gap);
+  scroll-margin-top: 24px;
 }
 
-section {
-  scroll-margin-top: 1rem;
+.work-intro {
+  margin: -12px 0 40px 0;
+  max-width: 56ch;
+  color: var(--ink-2);
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 48px 32px;
+}
+
+/* Labelled box, like the home page */
+.work-item {
+  position: relative;
+  margin: 0;
+  padding: 20px;
+  border: 1px solid var(--line);
+}
+
+.work-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 779.98px) {
+  main.work-page {
+    margin-top: 3.75rem;
+  }
+
+  .work-header {
+    padding-top: 28px;
+  }
+
+  .work-lead {
+    font-size: 19px;
+  }
+
+  .work-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .work-item {
+    padding: 12px;
+  }
+
+  .work-section {
+    scroll-margin-top: 76px;
+  }
+
+  .frame-tag {
+    left: 12px;
+    font-size: 11px;
+  }
 }
