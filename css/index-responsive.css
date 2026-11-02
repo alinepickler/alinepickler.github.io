@@ -9,7 +9,15 @@
   }
 
   .hero-title {
-    font-size: 44px;
+    font-size: 48px;
+  }
+
+  .home-section {
+    display: block;
+  }
+
+  .home-section > .section-label {
+    margin-bottom: 24px;
   }
 
   .spec-toggle {

@@ -1,21 +1,34 @@
-/* Shared design tokens and components for the whole portfolio.
-   Based on the case study's design system, keeping Red Hat Mono for labels. */
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600&family=Red+Hat+Mono:wght@300;400&display=swap');
+/* Redline: shared design tokens and components for the whole portfolio.
+   Paper and ink, one redline-pink accent, Archivo with semi-condensed
+   headings, Red Hat Mono for labels and measurements. */
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..700&family=Red+Hat+Mono:wght@300;400&display=swap');
 
 :root {
-  --ink: #1d1f20;
-  --ink-2: #5d5d60;
-  --ink-3: #7a7a7d;
-  --line: #d4d4d7;
-  --bg: #f2f2f3;
-  --surface: #ffffff;
-  --accent: #416180;
-  --accent-strong: #1d2d3d;
-  --accent-soft: #b5d9fd;
+  --ink: #1e1f24;
+  --ink-2: #5e5f66;
+  --ink-3: #6e6f75;
+  --line: #dcd9d2;
+  --bg: #f7f5f1;
+  --surface: #f7f5f1;
 
-  --font-heading: "Barlow Condensed", system-ui, sans-serif;
-  --font-body: "Barlow", system-ui, sans-serif;
+  /* Redline pink: 500 for marks and rules, 600 for numbers, 700 for link text */
+  --red-100: #faebf0;
+  --red-200: #f4d2de;
+  --red-300: #ebadc3;
+  --red-500: #e0437a;
+  --red-600: #d62462;
+  --red-700: #b31e52;
+  --red-900: #65112e;
+
+  --accent: var(--red-700);
+  --accent-strong: var(--red-900);
+  --accent-soft: var(--red-300);
+  --mark: var(--red-500);
+
+  --font-heading: "Archivo", system-ui, sans-serif;
+  --font-body: "Archivo", system-ui, sans-serif;
   --font-mono: "Red Hat Mono", ui-monospace, monospace;
+  --heading-stretch: 78%;
 
   --text-sm: 14px;
   --text-md: 16px;
@@ -41,29 +54,61 @@ body {
   padding: 0 var(--gutter);
 }
 
-/* Links */
+/* Links: ink text with a redline underline */
 .text-link {
-  color: var(--accent);
+  color: var(--ink);
   text-decoration: underline;
+  text-decoration-color: var(--mark);
   text-decoration-thickness: 1px;
-  text-underline-offset: 3px;
+  text-underline-offset: 4px;
 }
 
 .text-link:hover {
-  color: var(--accent-strong);
+  color: var(--accent);
+  text-decoration-thickness: 2px;
 }
 
 a:focus-visible,
 button:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 2px;
+  outline: 2px solid var(--red-600);
+  outline-offset: 3px;
 }
 
-/* Section label: "01 / About" in mono with a hairline underneath */
+/* Signature: a dimension line with end ticks and a mono measurement */
+.dim {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  color: var(--mark);
+}
+
+.dim::before,
+.dim::after {
+  content: "";
+  flex: 1;
+  border-top: 1px solid var(--mark);
+}
+
+.dim > .dim-ticks::before,
+.dim > .dim-ticks::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  height: 9px;
+  margin-top: -5px;
+  border-left: 1px solid var(--mark);
+}
+
+.dim > .dim-ticks::before { left: 0; }
+.dim > .dim-ticks::after { right: 0; }
+
+/* Section label: "01 / About" in mono, like a margin note */
 .section-label {
   margin: 0 0 32px 0;
-  padding-bottom: 10px;
-  border-bottom: 1px solid var(--line);
   font-family: var(--font-mono);
   font-weight: 400;
   font-size: var(--text-sm);
@@ -73,7 +118,7 @@ button:focus-visible {
 }
 
 .section-num {
-  color: var(--accent);
+  color: var(--red-600);
 }
 
 /* Labelled box frame tags */
@@ -119,7 +164,7 @@ button:focus-visible {
 }
 
 a.menu-item:hover {
-  border-bottom: 1px solid var(--accent-soft);
+  border-bottom: 1px solid var(--mark);
 }
 
 .current-page-desktop {
@@ -164,13 +209,24 @@ a.menu-item:hover {
   color: var(--accent);
 }
 
+/* Headings use Archivo's semi-condensed width */
+h1, h2, h3 {
+  font-stretch: var(--heading-stretch);
+}
+
 @media only screen and (max-width: 779.98px) {
   .my-name {
     font-size: 15px;
   }
 
-  .menu-mobile-box {
+  .menu-mobile-box,
+  .menu-mobile-button {
     border-bottom: 1px solid var(--line);
+    background-color: var(--bg);
+  }
+
+  .menu-mobile-button {
+    border-bottom: 0;
   }
 
   .menu-mobile {
