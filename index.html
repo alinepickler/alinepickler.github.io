@@ -52,21 +52,36 @@
 </div>
 
 <main>
-    <div class="row">
-    <figure class="intro col-12">
-      <div class="intro-img-container">
-          <picture>
-            <source media="(max-width: 779.98px)" srcset="images/index/me-mobile.jpg" width="1200" height="537">
-            <img class="intro-img" src="images/index/me.jpg" alt="Aline standing against a large grey wall" width="2000" height="547">
-          </picture>
+  <div class="row">
+    <section class="hero col-12" aria-labelledby="hero-title">
+      <div class="hero-text">
+        <h1 id="hero-title" class="hero-title">Product designer</h1>
+        <div class="spec-toggle" role="group" aria-label="Choose a view of the screen">
+          <button type="button" class="spec-btn is-active" aria-pressed="true" data-view="ui">UI</button>
+          <button type="button" class="spec-btn" aria-pressed="false" data-view="spec">Spec</button>
+        </div>
+        <p class="hero-note">The Bokkojan homepage. Switch to Spec to see the measurements behind it.</p>
       </div>
 
-      <figcaption class="intro-title-container col-5">
-        <div class="intro-title-bg col-12">
-          <h1 class="intro-title">product designer</h1>
+      <figure class="hero-frame">
+        <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+        <div class="hero-screen">
+          <img class="hero-img" src="images/index/hero-bokkojan.jpg" alt="Bokkojan homepage: a children's book discovery site with an illustrated reading scene" width="2000" height="1250">
+          <div class="spec-layer" aria-hidden="true">
+          <span class="ann ann-box " style="left:11.667%;top:28.778%;width:36.944%;height:10.667%"><span class="ann-label">H1 · Lora 48/48 · #101828</span></span>
+          <span class="ann ann-dim ann-v ann-minor" style="left:10.417%;top:39.444%;height:2.222%"><span class="ann-label">20</span></span>
+          <span class="ann ann-box ann-label-below" style="left:11.667%;top:41.667%;width:31.111%;height:5.778%"><span class="ann-label">Body · Nunito 16/26 · #364153</span></span>
+          <span class="ann ann-dim ann-h " style="left:0.000%;top:52.222%;width:11.667%"><span class="ann-label">168</span></span>
+          <span class="ann ann-dim ann-h ann-minor" style="left:43.125%;top:7.333%;width:2.222%"><span class="ann-label">32</span></span>
+          <span class="ann ann-box ann-label-below ann-label-end" style="left:70.556%;top:2.333%;width:17.778%;height:4.222%"><span class="ann-label">Pill · 1px · 8/16</span></span>
+          <span class="ann ann-box" style="left:11.667%;top:81.000%;width:37.639%;height:14.222%"><span class="ann-label">Card · radius 16 · padding 20</span></span>
+          <span class="ann ann-dim ann-h ann-minor" style="left:49.306%;top:87.778%;width:1.389%"><span class="ann-label">20</span></span>
+          <span class="ann ann-swatches" style="right:11.667%;top:68.000%"><span class="swatch" style="--c:#F4F1EC">F4F1EC</span><span class="swatch" style="--c:#F2EAE0">F2EAE0</span><span class="swatch" style="--c:#09637E">09637E</span><span class="swatch" style="--c:#101828">101828</span></span>
+          </div>
         </div>
-      </figcaption>
-    </figure>
+        <figcaption class="hero-caption"><a class="case-link" href="bokkojan.html">Bokkojan</a> · Sweden · 2026</figcaption>
+      </figure>
+    </section>
   </div>
 
   <div class="row margin-top">
@@ -184,3 +199,4 @@
 </div>
 
 <script src="js/mobile-menu.js?v=20261102"></script>
+<script src="js/hero-spec.js?v=20261102"></script>

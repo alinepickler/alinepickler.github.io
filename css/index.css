@@ -1,49 +1,245 @@
-/* The photo is absolutely positioned, so reserve its height here */
-.intro {
+/* Hero: a framed product screen with a UI / Spec toggle */
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding: 3rem 5rem 1rem 5rem;
+}
+
+.hero-text {
+  flex: 0 0 26%;
+}
+
+.hero-title {
   margin: 0;
-  position: relative;
-  aspect-ratio: 2000 / 547;
-}
-
-.intro-img-container {
-  z-index: 1;
-  position: absolute;
-  width: 100%;
-}
-
-.intro-img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.intro-title-container {
-  position: relative;
-  margin-top: 3.5rem;
-  border-top: 0.1em solid white;
-  border-left: 0.1em solid white;
-  border-bottom: 0.1em solid white;
-  float: right;
-  z-index: 3;
-}
-
-.intro-title-bg {
-  float: none;
-  width: auto;
-  text-decoration: none;
-  background-color: white;
-  margin: 3% auto 3% 3%;
-  padding: 3% 0 3% 7%;
-}
-
-.intro-title {
-  width: 50%;
   color: grey;
   text-transform: uppercase;
   font-weight: bold;
-  line-height: 90%;
-  font-size: 3.6em;
+  font-size: 3.6rem;
+  line-height: 0.9;
+}
+
+.spec-toggle {
+  display: inline-flex;
+  margin-top: 2rem;
+  border: 1px solid #404040;
+}
+
+.spec-btn {
+  padding: 0.4rem 1.2rem;
+  border: 0;
+  background: white;
+  color: #404040;
+  font: inherit;
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.spec-btn + .spec-btn {
+  border-left: 1px solid #404040;
+}
+
+.spec-btn.is-active {
+  background: #404040;
+  color: white;
+}
+
+.spec-btn:focus-visible {
+  outline: 2px solid #E0457B;
+  outline-offset: 2px;
+}
+
+.hero-note {
+  margin: 1rem 0 0 0;
+  max-width: 22ch;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: grey;
+}
+
+/* Blueprint frame, matching the case study page */
+.hero-frame {
+  position: relative;
+  flex: 1;
   margin: 0;
+  padding: 1.2rem;
+  border: 1px solid rgba(29, 31, 32, 0.16);
+}
+
+.hero-frame > .corner {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  color: rgba(29, 31, 32, 0.55);
+}
+
+.hero-frame > .corner::before,
+.hero-frame > .corner::after {
+  content: "";
+  position: absolute;
+  background: currentColor;
+}
+
+.hero-frame > .corner::before { left: 5px; top: 0; width: 1px; height: 100%; }
+.hero-frame > .corner::after  { top: 5px; left: 0; width: 100%; height: 1px; }
+.hero-frame > .corner.tl { top: -6px; left: -6px; }
+.hero-frame > .corner.tr { top: -6px; right: -6px; }
+.hero-frame > .corner.bl { bottom: -6px; left: -6px; }
+.hero-frame > .corner.br { bottom: -6px; right: -6px; }
+
+.hero-screen {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #D9D9D9;
+}
+
+.hero-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: filter 0.3s;
+}
+
+.hero-caption {
+  margin-top: 0.6rem;
+  font-size: 0.8rem;
+  color: grey;
+}
+
+/* Spec layer: redlines measured on the live page */
+.spec-layer {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+  --red: #E0457B;
+}
+
+.hero.is-spec .spec-layer {
+  opacity: 1;
+  visibility: visible;
+}
+
+.hero.is-spec .hero-img {
+  filter: saturate(0.35) brightness(1.05);
+}
+
+.ann {
+  position: absolute;
+}
+
+.ann-label {
+  position: absolute;
+  white-space: nowrap;
+  padding: 1px 5px;
+  background: var(--red);
+  color: white;
+  font-family: 'Red Hat Mono', monospace;
+  font-size: 11px;
+  line-height: 15px;
+}
+
+.ann-box {
+  outline: 1px solid var(--red);
+  background: rgba(224, 69, 123, 0.08);
+}
+
+.ann-box > .ann-label {
+  left: -1px;
+  bottom: 100%;
+}
+
+.ann-box.ann-label-below > .ann-label {
+  top: 100%;
+  bottom: auto;
+}
+
+.ann-box.ann-label-end > .ann-label {
+  left: auto;
+  right: -1px;
+}
+
+/* Dimension lines with end ticks */
+.ann-h {
+  height: 0;
+  border-top: 1px solid var(--red);
+}
+
+.ann-h::before,
+.ann-h::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  height: 9px;
+  border-left: 1px solid var(--red);
+}
+
+.ann-h::before { left: 0; }
+.ann-h::after  { right: 0; }
+
+.ann-h > .ann-label {
+  left: 50%;
+  top: 4px;
+  transform: translateX(-50%);
+}
+
+.ann-v {
+  width: 0;
+  border-left: 1px solid var(--red);
+}
+
+.ann-v::before,
+.ann-v::after {
+  content: "";
+  position: absolute;
+  left: -5px;
+  width: 9px;
+  border-top: 1px solid var(--red);
+}
+
+.ann-v::before { top: 0; }
+.ann-v::after  { bottom: 0; }
+
+.ann-v > .ann-label {
+  top: 50%;
+  right: 4px;
+  transform: translateY(-50%);
+}
+
+.ann-swatches {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 3px;
+}
+
+.swatch {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 6px 2px 2px;
+  background: white;
+  outline: 1px solid var(--red);
+  font-family: 'Red Hat Mono', monospace;
+  font-size: 10px;
+  color: #1d1f20;
+}
+
+.swatch::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: var(--c);
+  outline: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spec-layer,
+  .hero-img {
+    transition: none;
+  }
 }
 
 .margin-top {

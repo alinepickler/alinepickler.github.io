@@ -7,28 +7,48 @@
     margin: 3.75rem 0 0 0;
   }
 
-  .intro {
-    margin-top: 0;
-    position: relative;
-    z-index: 1;
-    aspect-ratio: 1200 / 537;
+  .hero {
+    display: block;
+    padding: 1.5rem 1.5rem 0.5rem 1.5rem;
   }
 
-  .intro-title-container {
-    width: 45%;
-    margin-top: 1.875rem;
-    border-top: 0.08rem solid white;
-    border-left: 0.08rem solid white;
-    border-bottom: 0.08rem solid white;
+  .hero-title {
+    font-size: 2.25rem;
   }
 
-  .intro-title-bg {
-    margin: 0.625rem auto 0.625rem 0.625rem;
-    padding: 0.625rem 0 0.625rem 1rem;
+  .spec-toggle {
+    margin-top: 1rem;
   }
 
-  .intro-title {
-    font-size: 1.5625rem;
+  .spec-btn {
+    padding: 0.4rem 1rem;
+    font-size: 0.8125rem;
+  }
+
+  .hero-note {
+    max-width: none;
+    margin-bottom: 1.5rem;
+    font-size: 0.875rem;
+  }
+
+  .hero-frame {
+    padding: 0.625rem;
+  }
+
+  .hero-caption {
+    font-size: 0.75rem;
+  }
+
+  /* The smallest measurements are unreadable at phone size */
+  .ann-minor,
+  .ann-swatches {
+    display: none;
+  }
+
+  .ann-label {
+    font-size: 9px;
+    line-height: 12px;
+    padding: 0 3px;
   }
 
   .margin-top {
