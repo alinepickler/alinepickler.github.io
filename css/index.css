@@ -161,3 +161,27 @@
 .brand-img-1 {
   width: 100%;
 }
+
+.case-img-box {
+  margin: 0;
+}
+
+.case-img {
+  width: 100%;
+  height: auto;
+}
+
+.case-text-box {
+  padding: 0 0 0 1.2rem;
+  margin: 0;
+}
+
+.case-link {
+  color: black;
+  border-bottom: 0.06rem solid #404040;
+  text-decoration: none;
+}
+
+.case-link:hover {
+  border-bottom-color: #D9D9D9;
+}
