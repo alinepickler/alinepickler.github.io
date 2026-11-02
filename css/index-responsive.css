@@ -1,10 +1,10 @@
-@media only screen and (min-width: 320px) and (max-width: 780px) {
+@media only screen and (max-width: 779.98px) {
   body {
     margin: 0;
   }
 
   main {
-    margin: 12rem 0 0 0;
+    margin: 3.75rem 0 0 0;
   }
 
   .intro {
@@ -14,102 +14,82 @@
     aspect-ratio: 1200 / 537;
   }
 
-  .intro-img {
-    display: none;
-  }
-
-  .intro-img-mobile {
-    display: block;
-    width: 100%;
-  }
-
   .intro-title-container {
     width: 45%;
-    margin-top: 6rem;
-    border-top: 0.25em solid white;
-    border-left: 0.25em solid white;
-    border-bottom: 0.25em solid white;
+    margin-top: 1.875rem;
+    border-top: 0.08rem solid white;
+    border-left: 0.08rem solid white;
+    border-bottom: 0.08rem solid white;
   }
 
   .intro-title-bg {
-    margin: 2rem auto 2rem 2rem;
-    padding: 2rem 0 2rem 3rem;
+    margin: 0.625rem auto 0.625rem 0.625rem;
+    padding: 0.625rem 0 0.625rem 1rem;
   }
 
   .intro-title {
-    font-size: 5rem;
+    font-size: 1.5625rem;
   }
 
   .margin-top {
-    margin-top: 6rem;
+    margin-top: 1.875rem;
   }
 
   .ui-title {
+    min-width: 0;
     width: 50%;
-    padding-bottom: 0.2rem;
-    margin: 5rem auto 2rem 0;
-    font-size: 2.8rem;
+    padding: 0 0 0.0625rem 1.5rem;
+    margin: 1.5rem auto 0.625rem 0;
+    font-size: 0.875rem;
+  }
+
+  .ui-content,
+  .work-list {
+    padding: 0.3125rem 1.5rem;
   }
 
   .web-mobile-title {
-    font-size: 5rem;
-    line-height: 5rem;
-    padding: 2rem 0 2rem 0;
+    font-size: 1.5625rem;
+    line-height: 1.5625rem;
+    padding: 0.625rem 0 0.625rem 0;
   }
 
   .web-mobile-text {
     margin: 0;
-    padding-bottom: 2rem;
-    font-size: 2.8rem;
-  }
-
-  .footer-text {
-    width: 50%;
-    margin-top: 3rem;
-    text-align: center;
-    font-size: 2.5rem;
-  }
-
-  .footer-icon-box {
-    width: 50%;
-  }
-
-  .footer-icon {
-    width: 5rem;
-    margin:1.5rem 0 1.5rem 5rem;
-    text-align: center;
+    padding-bottom: 0.625rem;
+    font-size: 0.9375rem;
   }
 
   .work-card {
-    padding: 0 0 4rem 0;
+    padding: 0 0 1.25rem 0;
   }
 
   .work-caption {
-    margin-top: 1.5rem;
-    font-size: 4rem;
+    margin-top: 0.5rem;
+    font-size: 1.25rem;
   }
 
   .about-text {
-    font-size: 3.2rem;
+    font-size: 1.0625rem;
   }
 
   .exp-item {
     display: block;
-    padding: 3rem 0;
+    padding: 1rem 0;
   }
 
   .exp-years {
-    padding: 0 0 1rem 0;
-    font-size: 2.8rem;
+    padding: 0 0 0.3125rem 0;
+    font-size: 0.875rem;
   }
 
   .exp-role {
-    font-size: 3.2rem;
+    font-size: 1.0625rem;
   }
 
   .exp-desc {
-    margin-top: 1rem;
-    font-size: 2.8rem;
+    margin-top: 0.3125rem;
+    font-size: 0.9375rem;
   }
 
   .case-text-box {

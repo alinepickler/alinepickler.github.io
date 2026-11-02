@@ -1,7 +1,3 @@
-.current-page-desktop {
-  border-bottom: 0.06rem solid  #404040;
-}
-
 /* The photo is absolutely positioned, so reserve its height here */
 .intro {
   margin: 0;
@@ -9,17 +5,16 @@
   aspect-ratio: 2000 / 547;
 }
 
-.intro-img-mobile {
-  display: none;
-}
-
 .intro-img-container {
   z-index: 1;
   position: absolute;
+  width: 100%;
 }
 
 .intro-img {
+  display: block;
   width: 100%;
+  height: auto;
 }
 
 .intro-title-container {
@@ -33,6 +28,8 @@
 }
 
 .intro-title-bg {
+  float: none;
+  width: auto;
   text-decoration: none;
   background-color: white;
   margin: 3% auto 3% 3%;
@@ -54,6 +51,8 @@
 }
 
 .ui-title {
+  min-width: 11rem;
+  white-space: nowrap;
   margin: 2rem auto 0.2rem 0;
   padding-left: 5rem;
   border-bottom: 0.06rem solid #A6A6A6;

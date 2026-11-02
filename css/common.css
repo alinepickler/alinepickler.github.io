@@ -1,16 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Yantramanav:400,700');
-
-@font-face {
-    font-family: LetterGothic;
-    src: url(fonts/LetterGothicStdMedium.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300&family=Yantramanav:wght@400;700&display=swap');
 
 * {
   box-sizing: border-box;
 }
 
-html {
-  font-size: 1.3vw;
+/* On phones the root size stays at the browser default, so text follows
+   the user's zoom and font size settings. From 780px up it grows with the
+   viewport (keeping a rem part, so settings still count), between 14px and 24px. */
+@media only screen and (min-width: 780px) {
+  html {
+    font-size: clamp(0.875rem, 0.25rem + 1vw, 1.5rem);
+  }
 }
 
 body {
@@ -42,6 +42,10 @@ a.menu-item:hover {
   border-bottom: 0.06rem solid  #D9D9D9;
 }
 
+.current-page-desktop {
+  border-bottom: 0.06rem solid  #404040;
+}
+
 .grey-bg {
   background-color: #F2F2F2;
 }
@@ -52,7 +56,8 @@ a.menu-item:hover {
 }
 
 .my-name {
-  font-family: LetterGothic;
+  font-family: 'Red Hat Mono', monospace;
+  font-weight: 300;
   font-size: 1.2em;
   color: black;
   text-transform: uppercase;
@@ -91,12 +96,6 @@ footer {
   margin: 0.3rem 0 0.2rem 1.2rem;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 780px) {
-  footer {
-    font-size: 2em;
-  }
-}
-
 .row::after {
     content: "";
     clear: both;
@@ -108,9 +107,31 @@ footer {
 }
 
 /* For mobile phones: */
-@media only screen and (min-width: 320px) and (max-width: 780px) {
+@media only screen and (max-width: 779.98px) {
   [class*="col-"] {
       width: 100%;
+  }
+
+  footer {
+    padding: 0.125rem 1.5rem;
+    font-size: 0.625rem;
+  }
+
+  .footer-text {
+    width: 50%;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.75rem;
+  }
+
+  .footer-icon-box {
+    width: 50%;
+  }
+
+  .footer-icon {
+    width: 1.5rem;
+    margin: 0.5rem 0 0.5rem 1.5rem;
+    text-align: center;
   }
 }
 

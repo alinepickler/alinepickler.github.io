@@ -130,15 +130,11 @@ img {
   background: white;
 }
 
-.current-page-desktop {
-  border-bottom: 0.06rem solid #404040;
-}
-
 /* Room for the fixed mobile header */
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 779.98px) {
   .case::before {
     content: "";
     display: block;
-    height: 12rem;
+    height: 3.75rem;
   }
 }

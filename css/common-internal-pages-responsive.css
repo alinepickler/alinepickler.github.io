@@ -1,66 +1,49 @@
-@media only screen and (min-width: 320px) and (max-width: 780px) {
+@media only screen and (max-width: 779.98px) {
   body {
     margin: 0;
   }
 
   main {
-    margin: 12rem 0 0 0;
-    padding-bottom: 8rem;
+    margin: 3.75rem 0 0 0;
+    padding-bottom: 2.5rem;
   }
 
   .img-box {
     width: 90%;
     float: none;
     display: block;
-    padding: 5rem 0 0 0;
+    padding: 1.5rem 0 0 0;
   }
 
   .img-title {
     width: 40%;
-    margin: 1.5rem auto 0 0;
-    padding-left: 5rem;
+    margin: 0.5rem auto 0 0;
+    padding-left: 1.5rem;
     border-bottom: 0.06rem solid #A6A6A6;
-    font-size: 2.8rem;
+    font-size: 0.875rem;
   }
 
   .work-page-title {
-    padding: 4rem 0 0 5rem;
-    font-size: 8rem;
-  }
-
-  .work-jump {
-    padding: 4rem 0 0 5rem;
-  }
-
-  .work-jump a {
-    margin-right: 5rem;
-    font-size: 3rem;
-  }
-
-  .work-heading {
-    margin-top: 10rem;
-    padding-left: 5rem;
-    font-size: 6rem;
-  }
-
-  section {
-    scroll-margin-top: 13rem;
-  }
-
-  .footer-text {
-    width: 50%;
-    margin-top: 3rem;
-    text-align: center;
+    padding: 1.25rem 0 0 1.5rem;
     font-size: 2.5rem;
   }
 
-  .footer-icon-box {
-    width: 50%;
+  .work-jump {
+    padding: 1.25rem 0 0 1.5rem;
   }
 
-  .footer-icon {
-    width: 5rem;
-    margin:1.5rem 0 1.5rem 5rem;
-    text-align: center;
+  .work-jump a {
+    margin-right: 1.5rem;
+    font-size: 0.9375rem;
+  }
+
+  .work-heading {
+    margin-top: 3.125rem;
+    padding-left: 1.5rem;
+    font-size: 1.875rem;
+  }
+
+  section {
+    scroll-margin-top: 4rem;
   }
 }

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -32,12 +33,12 @@
       </header>
     </a>
 
-    <button id="menu-mobile-btn" class="menu-mobile-button">
-      <div class="hamburger-menu">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </div>
+    <button id="menu-mobile-btn" class="menu-mobile-button" aria-label="Menu" aria-expanded="false" aria-controls="nav-mobile">
+      <span class="hamburger-menu">
+        <span class="bar1"></span>
+        <span class="bar2"></span>
+        <span class="bar3"></span>
+      </span>
     </button>
   </div>
 
@@ -54,8 +55,10 @@
     <div class="row">
     <figure class="intro col-12">
       <div class="intro-img-container">
-          <img class="intro-img" src="images/index/me.jpg" alt="Aline in a big wall">
-          <img class="intro-img-mobile" src="images/index/me-mobile.jpg" alt="Aline in a big wall">
+          <picture>
+            <source media="(max-width: 779.98px)" srcset="images/index/me-mobile.jpg" width="1200" height="537">
+            <img class="intro-img" src="images/index/me.jpg" alt="Aline standing against a large grey wall" width="2000" height="547">
+          </picture>
       </div>
 
       <figcaption class="intro-title-container col-5">
