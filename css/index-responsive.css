@@ -117,14 +117,27 @@
   }
 
   .case-img-box {
-    margin: 0.5rem 0 1rem 0;
+    width: fit-content;
+    margin: 0.5rem auto 1.5rem auto;
+    padding: 1rem 1.5rem;
   }
 
   .case-phone {
-    width: 55%;
-    margin: 0 auto;
-    border-width: 0.375rem;
-    border-radius: 1.5rem;
+    width: 12rem;
+  }
+
+  .frame-tag {
+    left: 0.75rem;
+    font-size: 0.6875rem;
+  }
+
+  .frame-tag-end {
+    left: auto;
+    right: 0.75rem;
+  }
+
+  .case-screen {
+    border-radius: 1.25rem;
   }
 
   .case-text-box {

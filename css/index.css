@@ -59,35 +59,37 @@
   color: grey;
 }
 
-/* Blueprint frame, matching the case study page */
+/* Labelled box: a hairline frame with small mono labels cut into its top edge */
 .hero-frame {
   position: relative;
   flex: 1;
   margin: 0;
-  padding: 1.2rem;
-  border: 1px solid rgba(29, 31, 32, 0.16);
+  padding: 1.4rem;
+  border: 1px solid #D9D9D9;
 }
 
-.hero-frame > .corner {
+.frame-tag {
   position: absolute;
-  width: 11px;
-  height: 11px;
-  color: rgba(29, 31, 32, 0.55);
+  top: 0;
+  left: 1rem;
+  padding: 0 0.5rem;
+  transform: translateY(-50%);
+  background: white;
+  font-family: 'Red Hat Mono', monospace;
+  font-weight: 300;
+  font-size: 0.72rem;
+  line-height: 1;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #404040;
 }
 
-.hero-frame > .corner::before,
-.hero-frame > .corner::after {
-  content: "";
-  position: absolute;
-  background: currentColor;
+.frame-tag-end {
+  left: auto;
+  right: 1rem;
+  color: grey;
 }
 
-.hero-frame > .corner::before { left: 5px; top: 0; width: 1px; height: 100%; }
-.hero-frame > .corner::after  { top: 5px; left: 0; width: 100%; height: 1px; }
-.hero-frame > .corner.tl { top: -6px; left: -6px; }
-.hero-frame > .corner.tr { top: -6px; right: -6px; }
-.hero-frame > .corner.bl { bottom: -6px; left: -6px; }
-.hero-frame > .corner.br { bottom: -6px; right: -6px; }
 
 .hero-screen {
   position: relative;
@@ -283,19 +285,19 @@
   gap: 4rem;
 }
 
+/* Labelled box around the phone, matching the hero */
 .case-img-box {
+  position: relative;
   flex: 0 0 auto;
   margin: 0 0 0 4rem;
+  padding: 1.6rem 2.2rem;
+  border: 1px solid #D9D9D9;
 }
 
-/* Phone mockup that scrolls through the Bokkojan mobile home page */
+/* Phone screen that scrolls through the Bokkojan mobile home page */
 .case-phone {
   display: block;
   width: 14rem;
-  overflow: hidden;
-  border: 0.55rem solid #1d1f20;
-  border-radius: 2rem;
-  background: #f4f1ec;
 }
 
 .case-screen {
@@ -303,6 +305,9 @@
   display: block;
   aspect-ratio: 390 / 844;
   overflow: hidden;
+  border: 1px solid #D9D9D9;
+  border-radius: 1.5rem;
+  background: #f4f1ec;
 }
 
 /* The page is 3094px tall on a 390 x 844 screen, with an 81px tab bar on top.
@@ -421,6 +426,10 @@
   display: flex;
   padding: 1rem 0;
   border-top: 0.06rem solid #D9D9D9;
+}
+
+.exp-item:first-child {
+  border-top: 0;
 }
 
 .exp-years {
