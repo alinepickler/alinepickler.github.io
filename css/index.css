@@ -1,100 +1,74 @@
-/* Hero: a framed product screen with a UI / Spec toggle */
-.hero {
-  display: flex;
-  align-items: center;
-  gap: 3rem;
-  padding: 3rem 5rem 1rem 5rem;
+/* Home page, built on css/tokens.css */
+
+.home-section {
+  margin-top: var(--section-gap);
 }
 
-.hero-text {
-  flex: 0 0 26%;
+/* Hero: a framed product screen with a UI / Spec toggle */
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2.4fr);
+  align-items: center;
+  gap: 48px;
+  padding-top: clamp(40px, 6vw, 80px);
 }
 
 .hero-title {
   margin: 0;
-  color: grey;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: clamp(44px, 6vw, 80px);
+  line-height: 0.95;
   text-transform: uppercase;
-  font-weight: bold;
-  font-size: 3.6rem;
-  line-height: 0.9;
+  color: var(--ink);
 }
 
 .spec-toggle {
   display: inline-flex;
-  margin-top: 2rem;
-  border: 1px solid #404040;
+  margin-top: 28px;
+  border: 1px solid var(--ink);
 }
 
 .spec-btn {
-  padding: 0.4rem 1.2rem;
+  padding: 7px 18px;
   border: 0;
-  background: white;
-  color: #404040;
-  font: inherit;
-  font-size: 0.9rem;
+  background: transparent;
+  color: var(--ink);
+  font-family: var(--font-mono);
+  font-size: 13px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   cursor: pointer;
 }
 
 .spec-btn + .spec-btn {
-  border-left: 1px solid #404040;
+  border-left: 1px solid var(--ink);
 }
 
 .spec-btn.is-active {
-  background: #404040;
-  color: white;
-}
-
-.spec-btn:focus-visible {
-  outline: 2px solid #E0457B;
-  outline-offset: 2px;
+  background: var(--ink);
+  color: var(--bg);
 }
 
 .hero-note {
-  margin: 1rem 0 0 0;
-  max-width: 22ch;
-  font-size: 0.95rem;
-  line-height: 1.5;
-  color: grey;
+  margin: 16px 0 0 0;
+  max-width: 26ch;
+  font-size: var(--text-md);
+  color: var(--ink-2);
 }
 
 /* Labelled box: a hairline frame with small mono labels cut into its top edge */
 .hero-frame {
   position: relative;
-  flex: 1;
   margin: 0;
-  padding: 1.4rem;
-  border: 1px solid #D9D9D9;
+  padding: 24px;
+  border: 1px solid var(--line);
 }
-
-.frame-tag {
-  position: absolute;
-  top: 0;
-  left: 1rem;
-  padding: 0 0.5rem;
-  transform: translateY(-50%);
-  background: white;
-  font-family: 'Red Hat Mono', monospace;
-  font-weight: 300;
-  font-size: 0.72rem;
-  line-height: 1;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #404040;
-}
-
-.frame-tag-end {
-  left: auto;
-  right: 1rem;
-  color: grey;
-}
-
 
 .hero-screen {
   position: relative;
   overflow: hidden;
-  border: 1px solid #D9D9D9;
+  border: 1px solid var(--line);
 }
 
 .hero-img {
@@ -105,9 +79,9 @@
 }
 
 .hero-caption {
-  margin-top: 0.6rem;
-  font-size: 0.8rem;
-  color: grey;
+  margin-top: 12px;
+  font-size: var(--text-sm);
+  color: var(--ink-3);
 }
 
 /* Spec layer: redlines measured on the live page */
@@ -139,7 +113,7 @@
   padding: 1px 5px;
   background: var(--red);
   color: white;
-  font-family: 'Red Hat Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 11px;
   line-height: 15px;
 }
@@ -224,7 +198,7 @@
   padding: 2px 6px 2px 2px;
   background: white;
   outline: 1px solid var(--red);
-  font-family: 'Red Hat Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 10px;
   color: #1d1f20;
 }
@@ -244,54 +218,27 @@
   }
 }
 
-.margin-top {
-  margin-top: 3rem;
-}
-
-.ui-title {
-  min-width: 11rem;
-  white-space: nowrap;
-  margin: 2rem auto 0.2rem 0;
-  padding-left: 5rem;
-  border-bottom: 0.06rem solid #A6A6A6;
-  font-size: 1rem;
-  font-weight: normal;
-  color: grey;
-}
-
-.ui-content {
-  padding: 1rem 5rem;
-}
-
-.web-mobile-title {
-  width: 70%;
-  font-size: 2.3rem;
-  line-height: 2.3rem;
-  color: grey;
+/* About */
+.lead {
   margin: 0;
+  max-width: 56ch;
+  font-size: var(--text-lead);
+  line-height: 1.5;
 }
 
-.web-mobile-title span {
-  color: black;
-}
-
-.web-mobile-text {
-  margin: 1rem 0 0 0;
-}
-
+/* Case study */
 .case-content {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
   align-items: center;
-  gap: 4rem;
+  gap: clamp(40px, 6vw, 96px);
 }
 
-/* Labelled box around the phone, matching the hero */
 .case-img-box {
   position: relative;
-  flex: 0 0 auto;
-  margin: 0 0 0 4rem;
-  padding: 1.6rem 2.2rem;
-  border: 1px solid #D9D9D9;
+  margin: 0;
+  padding: 28px 36px;
+  border: 1px solid var(--line);
 }
 
 /* Phone screen that scrolls through the Bokkojan mobile home page */
@@ -305,7 +252,7 @@
   display: block;
   aspect-ratio: 390 / 844;
   overflow: hidden;
-  border: 1px solid #D9D9D9;
+  border: 1px solid var(--line);
   border-radius: 1.5rem;
   background: #f4f1ec;
 }
@@ -349,41 +296,85 @@
 }
 
 .case-text-box {
-  flex: 1;
   max-width: 34rem;
+}
+
+.case-title {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: clamp(32px, 4vw, 48px);
+  line-height: 1;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+.case-title span {
+  display: block;
+  color: var(--ink);
+}
+
+.case-text {
+  margin: 20px 0 0 0;
+}
+
+/* Experience */
+.exp-list {
+  margin: 0;
+  padding: 0;
+}
+
+.exp-item {
+  display: grid;
+  grid-template-columns: 200px minmax(0, 1fr);
+  gap: 24px;
+  padding: 24px 0;
+  border-top: 1px solid var(--line);
+}
+
+.exp-item:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.exp-years {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  letter-spacing: 0.04em;
+  color: var(--ink-3);
+  padding-top: 3px;
+}
+
+.exp-role {
   margin: 0;
 }
 
-.case-text-box .web-mobile-title {
-  width: auto;
+.exp-role b {
+  font-weight: 600;
 }
 
-.case-text-box .web-mobile-title span {
+.exp-desc {
   display: block;
+  margin-top: 6px;
+  max-width: 64ch;
+  font-size: var(--text-md);
+  color: var(--ink-2);
 }
 
-.case-link {
-  color: black;
-  border-bottom: 0.06rem solid #404040;
-  text-decoration: none;
-}
-
-.case-link:hover {
-  border-bottom-color: #D9D9D9;
-}
-
+/* Earlier work */
 .work-list {
-  padding: 1rem 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
 }
 
 .work-card {
   margin: 0;
-  padding: 0 1.2rem 0 0;
 }
 
 .work-card a {
   display: block;
-  color: black;
+  color: var(--ink);
   text-decoration: none;
 }
 
@@ -393,6 +384,7 @@
   height: auto;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+  border: 1px solid var(--line);
 }
 
 .work-card:nth-child(2) .work-img {
@@ -400,52 +392,17 @@
 }
 
 .work-caption {
-  margin-top: 0.8rem;
-  font-size: 1.6rem;
-  font-weight: bold;
-  border-bottom: 0.06rem solid transparent;
   display: inline-block;
+  margin-top: 12px;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1;
+  text-transform: uppercase;
+  border-bottom: 1px solid transparent;
 }
 
 .work-card a:hover .work-caption {
-  border-bottom-color: #404040;
-}
-
-.about-text {
-  margin: 0;
-  font-size: 1.3rem;
-  line-height: 1.5;
-}
-
-.exp-list {
-  margin: 0;
-  padding: 0;
-}
-
-.exp-item {
-  display: flex;
-  padding: 1rem 0;
-  border-top: 0.06rem solid #D9D9D9;
-}
-
-.exp-item:first-child {
-  border-top: 0;
-}
-
-.exp-years {
-  flex: 0 0 25%;
-  padding-right: 1.2rem;
-  color: grey;
-}
-
-.exp-role {
-  flex: 1;
-  margin: 0;
-  font-size: 1.1rem;
-}
-
-.exp-desc {
-  display: block;
-  margin-top: 0.4rem;
-  font-size: 0.95rem;
+  color: var(--accent);
+  border-bottom-color: var(--accent);
 }

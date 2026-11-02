@@ -1,42 +1,33 @@
 @media only screen and (max-width: 779.98px) {
-  body {
-    margin: 0;
-  }
-
   main {
-    margin: 3.75rem 0 0 0;
+    margin-top: 3.75rem;
   }
 
   .hero {
     display: block;
-    padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+    padding-top: 28px;
   }
 
   .hero-title {
-    font-size: 2.25rem;
+    font-size: 44px;
   }
 
   .spec-toggle {
-    margin-top: 1rem;
-  }
-
-  .spec-btn {
-    padding: 0.4rem 1rem;
-    font-size: 0.8125rem;
+    margin-top: 16px;
   }
 
   .hero-note {
     max-width: none;
-    margin-bottom: 1.5rem;
-    font-size: 0.875rem;
+    margin-bottom: 28px;
+    font-size: var(--text-sm);
   }
 
   .hero-frame {
-    padding: 0.625rem;
+    padding: 14px;
   }
 
   .hero-caption {
-    font-size: 0.75rem;
+    font-size: 13px;
   }
 
   /* The smallest measurements are unreadable at phone size */
@@ -51,65 +42,8 @@
     padding: 0 3px;
   }
 
-  .margin-top {
-    margin-top: 1.875rem;
-  }
-
-  .ui-title {
-    min-width: 0;
-    width: 50%;
-    padding: 0 0 0.0625rem 1.5rem;
-    margin: 1.5rem auto 0.625rem 0;
-    font-size: 0.875rem;
-  }
-
-  .ui-content,
-  .work-list {
-    padding: 0.3125rem 1.5rem;
-  }
-
-  .web-mobile-title {
-    font-size: 1.5625rem;
-    line-height: 1.5625rem;
-    padding: 0.625rem 0 0.625rem 0;
-  }
-
-  .web-mobile-text {
-    margin: 0;
-    padding-bottom: 0.625rem;
-    font-size: 0.9375rem;
-  }
-
-  .work-card {
-    padding: 0 0 1.25rem 0;
-  }
-
-  .work-caption {
-    margin-top: 0.5rem;
-    font-size: 1.25rem;
-  }
-
-  .about-text {
-    font-size: 1.0625rem;
-  }
-
-  .exp-item {
-    display: block;
-    padding: 1rem 0;
-  }
-
-  .exp-years {
-    padding: 0 0 0.3125rem 0;
-    font-size: 0.875rem;
-  }
-
-  .exp-role {
-    font-size: 1.0625rem;
-  }
-
-  .exp-desc {
-    margin-top: 0.3125rem;
-    font-size: 0.9375rem;
+  .lead {
+    font-size: 19px;
   }
 
   .case-content {
@@ -118,29 +52,43 @@
 
   .case-img-box {
     width: fit-content;
-    margin: 0.5rem auto 1.5rem auto;
-    padding: 1rem 1.5rem;
+    margin: 0 auto 32px auto;
+    padding: 20px 28px;
   }
 
   .case-phone {
     width: 12rem;
   }
 
-  .frame-tag {
-    left: 0.75rem;
-    font-size: 0.6875rem;
-  }
-
-  .frame-tag-end {
-    left: auto;
-    right: 0.75rem;
-  }
-
   .case-screen {
     border-radius: 1.25rem;
   }
 
-  .case-text-box {
-    max-width: none;
+  .exp-item {
+    display: block;
+    padding: 20px 0;
+  }
+
+  .exp-years {
+    padding: 0 0 6px 0;
+  }
+
+  .work-list {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .work-caption {
+    font-size: 24px;
+  }
+
+  .frame-tag {
+    left: 12px;
+    font-size: 11px;
+  }
+
+  .frame-tag-end {
+    left: auto;
+    right: 12px;
   }
 }

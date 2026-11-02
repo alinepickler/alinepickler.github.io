@@ -9,6 +9,7 @@
 
 <link rel="stylesheet" href="css/common.css?v=20261102b">
 <link rel="stylesheet" href="css/menu-mobile.css?v=20261102b">
+<link rel="stylesheet" href="css/tokens.css?v=20261102b">
 <link rel="stylesheet" href="css/index.css?v=20261102b">
 <link rel="stylesheet" href="css/index-responsive.css?v=20261102b">
 
@@ -51,56 +52,46 @@
   </nav>
 </div>
 
-<main>
-  <div class="row">
-    <section class="hero col-12" aria-labelledby="hero-title">
-      <div class="hero-text">
-        <h1 id="hero-title" class="hero-title">Product designer</h1>
-        <div class="spec-toggle" role="group" aria-label="Choose a view of the screen">
-          <button type="button" class="spec-btn is-active" aria-pressed="true" data-view="ui">UI</button>
-          <button type="button" class="spec-btn" aria-pressed="false" data-view="spec">Spec</button>
-        </div>
-        <p class="hero-note">The Bokkojan homepage. Switch to Spec to see the measurements behind it.</p>
+<main class="home">
+  <section class="hero container" aria-labelledby="hero-title">
+    <div class="hero-text">
+      <h1 id="hero-title" class="hero-title">Product designer</h1>
+      <div class="spec-toggle" role="group" aria-label="Choose a view of the screen">
+        <button type="button" class="spec-btn is-active" aria-pressed="true" data-view="ui">UI</button>
+        <button type="button" class="spec-btn" aria-pressed="false" data-view="spec">Spec</button>
       </div>
+      <p class="hero-note">The Bokkojan homepage. Switch to Spec to see the measurements behind it.</p>
+    </div>
 
-      <figure class="hero-frame">
-        <span class="frame-tag" aria-hidden="true">Bokkojan</span>
-        <span class="frame-tag frame-tag-end" aria-hidden="true">1440 × 900</span>
-        <div class="hero-screen">
-          <img class="hero-img" src="images/index/hero-bokkojan.jpg" alt="Bokkojan homepage: a children's book discovery site with an illustrated reading scene" width="2000" height="1250">
-          <div class="spec-layer" aria-hidden="true">
-          <span class="ann ann-box " style="left:11.667%;top:28.778%;width:36.944%;height:10.667%"><span class="ann-label">H1 · Lora 48/48 · #101828</span></span>
-          <span class="ann ann-dim ann-v ann-minor" style="left:10.417%;top:39.444%;height:2.222%"><span class="ann-label">20</span></span>
-          <span class="ann ann-box ann-label-below" style="left:11.667%;top:41.667%;width:31.111%;height:5.778%"><span class="ann-label">Body · Nunito 16/26 · #364153</span></span>
-          <span class="ann ann-dim ann-h " style="left:0.000%;top:52.222%;width:11.667%"><span class="ann-label">168</span></span>
-          <span class="ann ann-dim ann-h ann-minor" style="left:43.125%;top:7.333%;width:2.222%"><span class="ann-label">32</span></span>
-          <span class="ann ann-box ann-label-below ann-label-end" style="left:70.556%;top:2.333%;width:17.778%;height:4.222%"><span class="ann-label">Pill · 1px · 8/16</span></span>
-          <span class="ann ann-box" style="left:11.667%;top:81.000%;width:37.639%;height:14.222%"><span class="ann-label">Card · radius 16 · padding 20</span></span>
-          <span class="ann ann-dim ann-h ann-minor" style="left:49.306%;top:87.778%;width:1.389%"><span class="ann-label">20</span></span>
-          <span class="ann ann-swatches" style="right:11.667%;top:68.000%"><span class="swatch" style="--c:#F4F1EC">F4F1EC</span><span class="swatch" style="--c:#F2EAE0">F2EAE0</span><span class="swatch" style="--c:#09637E">09637E</span><span class="swatch" style="--c:#101828">101828</span></span>
-          </div>
+    <figure class="hero-frame">
+      <span class="frame-tag" aria-hidden="true">Bokkojan</span>
+      <span class="frame-tag frame-tag-end" aria-hidden="true">1440 × 900</span>
+      <div class="hero-screen">
+        <img class="hero-img" src="images/index/hero-bokkojan.jpg" alt="Bokkojan homepage: a children's book discovery site with an illustrated reading scene" width="2000" height="1250">
+        <div class="spec-layer" aria-hidden="true">
+        <span class="ann ann-box " style="left:11.667%;top:28.778%;width:36.944%;height:10.667%"><span class="ann-label">H1 · Lora 48/48 · #101828</span></span>
+        <span class="ann ann-dim ann-v ann-minor" style="left:10.417%;top:39.444%;height:2.222%"><span class="ann-label">20</span></span>
+        <span class="ann ann-box ann-label-below" style="left:11.667%;top:41.667%;width:31.111%;height:5.778%"><span class="ann-label">Body · Nunito 16/26 · #364153</span></span>
+        <span class="ann ann-dim ann-h " style="left:0.000%;top:52.222%;width:11.667%"><span class="ann-label">168</span></span>
+        <span class="ann ann-dim ann-h ann-minor" style="left:43.125%;top:7.333%;width:2.222%"><span class="ann-label">32</span></span>
+        <span class="ann ann-box ann-label-below ann-label-end" style="left:70.556%;top:2.333%;width:17.778%;height:4.222%"><span class="ann-label">Pill · 1px · 8/16</span></span>
+        <span class="ann ann-box" style="left:11.667%;top:81.000%;width:37.639%;height:14.222%"><span class="ann-label">Card · radius 16 · padding 20</span></span>
+        <span class="ann ann-dim ann-h ann-minor" style="left:49.306%;top:87.778%;width:1.389%"><span class="ann-label">20</span></span>
+        <span class="ann ann-swatches" style="right:11.667%;top:68.000%"><span class="swatch" style="--c:#F4F1EC">F4F1EC</span><span class="swatch" style="--c:#F2EAE0">F2EAE0</span><span class="swatch" style="--c:#09637E">09637E</span><span class="swatch" style="--c:#101828">101828</span></span>
         </div>
-        <figcaption class="hero-caption"><a class="case-link" href="bokkojan.html">Bokkojan</a> · Sweden · 2026</figcaption>
-      </figure>
-    </section>
-  </div>
+      </div>
+      <figcaption class="hero-caption"><a class="text-link" href="bokkojan.html">Bokkojan</a> · Sweden · 2026</figcaption>
+    </figure>
+  </section>
 
-  <div class="row margin-top">
-      <h2 class="ui-title col-2">About</h2>
-  </div>
+  <section class="home-section container" aria-labelledby="about-title">
+    <h2 class="section-label" id="about-title"><span class="section-num">01</span> / About</h2>
+    <p class="lead">Product designer with 10+ years designing and shipping digital products across fintech, enterprise and startup environments. I combine UX strategy, research and hands-on execution, from discovery through pixel-level detail, to solve problems and build products that scale.</p>
+  </section>
 
-  <div class="row">
-    <section class="ui-content col-12">
-      <p class="about-text col-8">Product designer with 10+ years designing and shipping digital products across fintech, enterprise and startup environments. I combine UX strategy, research and hands-on execution, from discovery through pixel-level detail, to solve problems and build products that scale.
-    </section>
-  </div>
-
-  <div class="row margin-top">
-      <h2 class="ui-title col-2">Case study</h2>
-  </div>
-
-  <div class="row">
-    <section class="ui-content case-content col-12">
+  <section class="home-section container" aria-labelledby="case-title">
+    <h2 class="section-label" id="case-title"><span class="section-num">02</span> / Case study</h2>
+    <div class="case-content">
       <figure class="case-img-box">
         <span class="frame-tag" aria-hidden="true">390 × 844</span>
         <a class="case-phone" href="bokkojan.html">
@@ -110,98 +101,82 @@
           </span>
         </a>
       </figure>
-      <figure class="case-text-box">
-        <figcaption class="col-12">
-          <h3 class="web-mobile-title">Bokkojan and <span>Cabaninha dos Livros</span></h3>
-          <p class="web-mobile-text">A self-initiated experiment: two localized children's book discovery sites, built solo with AI-assisted development, affiliate partnerships and SEO.
-          <p class="web-mobile-text"><a class="case-link" href="bokkojan.html">Read the case study</a>
-        </figcaption>
-      </figure>
-    </section>
-  </div>
+      <div class="case-text-box">
+        <h3 class="case-title">Bokkojan and <span>Cabaninha dos Livros</span></h3>
+        <p class="case-text">A self-initiated experiment: two localized children's book discovery sites, built solo with AI-assisted development, affiliate partnerships and SEO.</p>
+        <p class="case-text"><a class="text-link" href="bokkojan.html">Read the case study</a></p>
+      </div>
+    </div>
+  </section>
 
-  <div class="row margin-top">
-      <h2 class="ui-title col-2">Experience</h2>
-  </div>
+  <section class="home-section container" aria-labelledby="experience-title">
+    <h2 class="section-label" id="experience-title"><span class="section-num">03</span> / Experience</h2>
+    <dl class="exp-list">
+      <div class="exp-item">
+        <dt class="exp-years">2026 – Present</dt>
+        <dd class="exp-role"><b>Founder & Product Designer</b> · <a class="text-link" href="bokkojan.html">Bokkojan & Cabaninha dos Livros</a>
+          <span class="exp-desc">Built and launched a children's literature platform from concept to launch, leading product strategy, brand, UX/UI, content and development.</span></dd>
+      </div>
+      <div class="exp-item">
+        <dt class="exp-years">2023 – 2026</dt>
+        <dd class="exp-role"><b>Product Design Manager</b> · Financial technology
+          <span class="exp-desc">Managed and mentored the Product Design team for market technology products while working hands on. Drove adoption of the design system across those products.</span></dd>
+      </div>
+      <div class="exp-item">
+        <dt class="exp-years">2019 – 2023</dt>
+        <dd class="exp-role"><b>Senior Product Designer</b> · Financial technology
+          <span class="exp-desc">Led end-to-end product design for complex financial systems, from discovery to delivery, in close partnership with product managers and engineers. Helped build the design system from the ground up.</span></dd>
+      </div>
+      <div class="exp-item">
+        <dt class="exp-years">2018</dt>
+        <dd class="exp-role"><b>Front-End Developer</b>
+          <span class="exp-desc">Developed and maintained the internal component library, translating design concepts into responsive, production-ready interfaces in close partnership with designers.</span></dd>
+      </div>
+      <div class="exp-item">
+        <dt class="exp-years">2016 – 2017</dt>
+        <dd class="exp-role"><b>Product Designer & Front-End Developer</b>
+          <span class="exp-desc">Designed and implemented responsive web applications across a range of client projects, balancing design aesthetics with technical feasibility.</span></dd>
+      </div>
+      <div class="exp-item">
+        <dt class="exp-years">2008 – 2014</dt>
+        <dd class="exp-role"><b>Earlier experience</b>
+          <span class="exp-desc">Product Designer (2014). Visual Designer (2008 – 2014).</span></dd>
+      </div>
+    </dl>
+  </section>
 
-  <div class="row">
-    <section class="ui-content col-12">
-      <dl class="exp-list">
-        <div class="exp-item">
-          <dt class="exp-years">2026 – Present</dt>
-          <dd class="exp-role"><b>Founder & Product Designer</b> · <a class="case-link" href="bokkojan.html">Bokkojan & Cabaninha dos Livros</a>
-            <span class="exp-desc">Built and launched a children's literature platform from concept to launch, leading product strategy, brand, UX/UI, content and development.</span></dd>
-        </div>
-        <div class="exp-item">
-          <dt class="exp-years">2023 – 2026</dt>
-          <dd class="exp-role"><b>Product Design Manager</b> · Financial technology
-            <span class="exp-desc">Managed and mentored the Product Design team for market technology products while working hands on. Drove adoption of the design system across those products.</span></dd>
-        </div>
-        <div class="exp-item">
-          <dt class="exp-years">2019 – 2023</dt>
-          <dd class="exp-role"><b>Senior Product Designer</b> · Financial technology
-            <span class="exp-desc">Led end-to-end product design for complex financial systems, from discovery to delivery, in close partnership with product managers and engineers. Helped build the design system from the ground up.</span></dd>
-        </div>
-        <div class="exp-item">
-          <dt class="exp-years">2018</dt>
-          <dd class="exp-role"><b>Front-End Developer</b>
-            <span class="exp-desc">Developed and maintained the internal component library, translating design concepts into responsive, production-ready interfaces in close partnership with designers.</span></dd>
-        </div>
-        <div class="exp-item">
-          <dt class="exp-years">2016 – 2017</dt>
-          <dd class="exp-role"><b>Product Designer & Front-End Developer</b>
-            <span class="exp-desc">Designed and implemented responsive web applications across a range of client projects, balancing design aesthetics with technical feasibility.</span></dd>
-        </div>
-        <div class="exp-item">
-          <dt class="exp-years">2008 – 2014</dt>
-          <dd class="exp-role"><b>Earlier experience</b>
-            <span class="exp-desc">Product Designer (2014). Visual Designer (2008 – 2014).</span></dd>
-        </div>
-      </dl>
-    </section>
-  </div>
-
-  <div class="row margin-top">
-      <h2 class="ui-title col-2">Earlier work</h2>
-  </div>
-
-  <div class="row">
-    <section class="work-list col-12">
-      <figure class="work-card col-4">
+  <section class="home-section container" aria-labelledby="earlier-title">
+    <h2 class="section-label" id="earlier-title"><span class="section-num">04</span> / Earlier work</h2>
+    <div class="work-list">
+      <figure class="work-card">
         <a href="earlier-work.html#web">
           <img class="work-img" src="images/index/web.jpg" alt="Desktop computer showing a bike rental website" width="821" height="647" loading="lazy">
           <figcaption class="work-caption">Web</figcaption>
         </a>
       </figure>
-      <figure class="work-card col-4">
+      <figure class="work-card">
         <a href="earlier-work.html#mobile">
           <img class="work-img" src="images/index/mobile.jpg" alt="Phone showing a profile app on a table" width="438" height="812" loading="lazy">
           <figcaption class="work-caption">Mobile</figcaption>
         </a>
       </figure>
-      <figure class="work-card col-4">
+      <figure class="work-card">
         <a href="earlier-work.html#brand">
           <img class="work-img" src="images/index/logo.jpg" alt="Party Cupcakes logo on a card" width="427" height="420" loading="lazy">
           <figcaption class="work-caption">Brand</figcaption>
         </a>
       </figure>
-    </section>
-  </div>
+    </div>
+  </section>
 </main>
 
-<div class="row">
-  <footer class="col-12">
-      <p class="col-6 footer-text"> Aline Pickler | 2026
-      <figure class="footer-icon-box col-6">
-        <a href="https://github.com/alinepickler">
-          <img class="footer-icon footer-icon-mobile" src="icons/github-icon.svg" alt="GitHub">
-        </a>
-        <a href="https://www.linkedin.com/in/alinepickler">
-          <img class="footer-icon footer-icon-mobile" src="icons/linkedin-icon.svg" alt="LinkedIn">
-        </a>
-     </figure>
-  </footer>
-</div>
+<footer class="site-footer container">
+  <span>Aline Pickler · 2026</span>
+  <span class="footer-links">
+    <a href="https://github.com/alinepickler">GitHub</a>
+    <a href="https://www.linkedin.com/in/alinepickler">LinkedIn</a>
+  </span>
+</footer>
 
 <script src="js/mobile-menu.js?v=20261102b"></script>
 <script src="js/hero-spec.js?v=20261102b"></script>
