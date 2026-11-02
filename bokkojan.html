@@ -6,20 +6,58 @@
 <title>Bokkojan &amp; Cabaninha dos Livros | Aline Pickler</title>
 <meta name="description" content="A self-initiated experiment: two localized children's book discovery sites, built solo with AI-assisted development, affiliate partnerships and SEO.">
 <link rel="icon" type="image/png" href="images/index/heart.png" sizes="16x16">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/menu-mobile.css">
 <link rel="stylesheet" href="css/case-study.css">
 
 <body>
-<div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,48px);font-size:18px;line-height:1.55">
+<div class="row menu-and-header">
+  <a href="index.html">
+    <header class="my-name-bg col-4">
+      <p class="my-name">Aline Pickler
+    </header>
+  </a>
+  <nav class="menu">
+    <a class="menu-item" href="index.html">Home</a>
+    <a class="menu-item current-page-desktop" href="bokkojan.html">Case study</a>
+    <a class="menu-item" href="earlier-work.html">Earlier work</a>
+  </nav>
+</div>
 
-<nav style="display:flex;justify-content:space-between;align-items:center;padding:24px 0;font-size:15px;gap:16px;flex-wrap:wrap">
-<a href="index.html" style="font-family:var(--font-heading);font-size:22px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:inherit;text-decoration:none">Aline Pickler / Case study</a>
-<span style="display:flex;gap:20px;flex-wrap:wrap"><a href="#s0">Experiment</a><a href="#s2">Pivot</a><a href="#s3">Product</a><a href="#s5">Markets</a><a href="#s-ai">AI</a><a href="#s-growth">Growth</a><a href="#s6">Results</a><a href="#s-learn">Learnings</a></span>
-</nav>
+<div class="row">
+  <div class="menu-mobile-box">
+    <button id="menu-mobile-btn" class="menu-mobile-button">
+      <div class="hamburger-menu">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </button>
+
+    <a href="index.html">
+      <header class="my-name-bg-mobile">
+        <p class="my-name">Aline Pickler
+      </header>
+    </a>
+  </div>
+
+  <nav id="nav-mobile" class="menu-mobile">
+    <div class="menu-mobile-item-box">
+      <a class="menu-mobile-item" href="index.html">home</a>
+      <a class="menu-mobile-item current-page" href="bokkojan.html">case study</a>
+      <a class="menu-mobile-item" href="earlier-work.html">earlier work</a>
+    </div>
+  </nav>
+</div>
+
+<div class="case" style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,48px);font-size:18px;line-height:1.55">
+
 
 <!-- 1 HERO -->
 <header id="s1" style="padding:clamp(40px,8vw,96px) 0 56px">
 <div style="font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--color-accent-700);margin-bottom:20px">Self-initiated experiment · Bokkojan · Cabaninha dos Livros</div>
-<h1 style="font-family:var(--font-heading);font-weight:600;font-size:clamp(40px,6.5vw,80px);line-height:.95;margin:0;max-width:16ch;text-transform:uppercase">An experiment in building a product business from scratch.</h1>
+<h1 style="font-family:var(--font-heading);font-weight:600;font-size:clamp(40px,6.5vw,80px);line-height:.95;margin:0;text-transform:uppercase">An experiment in building a product business from scratch.</h1>
+<nav class="section-links" aria-label="Sections"><a href="#s0">Experiment</a><a href="#s2">Pivot</a><a href="#s3">Product</a><a href="#s5">Markets</a><a href="#s-ai">AI</a><a href="#s-growth">Growth</a><a href="#s6">Results</a><a href="#s-learn">Learnings</a></nav>
 <p style="max-width:56ch;margin:32px 0 0;font-size:21px">Bokkojan (Sweden) and Cabaninha dos Livros (Brazil) are two localized versions of one product concept. Parents find relevant books through their child's age, interests and everyday family moments.</p><p style="max-width:56ch;margin:16px 0 0">I built them to learn, hands-on, how a small digital business works: product, affiliate partnerships, AI-assisted development, and marketing through SEO.</p>
 <div style="display:flex;gap:20px;margin-top:20px;flex-wrap:wrap;font-size:16px"><a href="https://cabaninhadoslivros.com.br/">cabaninhadoslivros.com.br</a><a href="https://bokkojan.se/">bokkojan.se</a></div>
 </header>
@@ -223,6 +261,7 @@
 <p style="margin:0;font-size:16px">This experiment showed me that one person, working part-time, can now take a product from idea to live business in more than one country. Neither site is profitable yet, but the skills I gained used to feel out of reach, and the same setup can be applied to other ideas waiting on my list.</p></div>
 </section>
 
-<footer style="padding:64px 0;font-size:14px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap"><span>Bokkojan / Cabaninha dos Livros · Case study</span><a href="#s1">Back to top</a></footer>
+<div role="contentinfo" style="padding:64px 0;font-size:14px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap"><span>Bokkojan / Cabaninha dos Livros · Case study</span><a href="#s1">Back to top</a></div>
 </div>
+<script src="js/mobile-menu.js"></script>
 </body>

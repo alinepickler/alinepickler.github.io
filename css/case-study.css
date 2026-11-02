@@ -37,11 +37,11 @@ h1, h2, h3, h4 {
   font-weight: var(--font-heading-weight);
 }
 
-a {
+.case a {
   color: var(--color-accent-700);
 }
 
-a:hover {
+.case a:hover {
   color: var(--color-accent-900);
 }
 
@@ -95,4 +95,43 @@ img {
 .tag-outline {
   border: 1px solid var(--color-accent);
   color: var(--color-accent);
+}
+
+/* Anchor links under the hero heading */
+.section-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  margin-top: 28px;
+  font-size: 16px;
+}
+
+.case .section-links a {
+  color: var(--color-text);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.section-links a:hover {
+  border-bottom-color: var(--color-text);
+}
+
+/* Site header, shared with the portfolio pages */
+.menu-and-header,
+.menu-mobile-box,
+.menu-mobile {
+  font-family: 'Yantramanav', sans-serif;
+}
+
+.current-page-desktop {
+  border-bottom: 0.06rem solid #404040;
+}
+
+/* Room for the fixed mobile header */
+@media only screen and (max-width: 780px) {
+  .case::before {
+    content: "";
+    display: block;
+    height: 12rem;
+  }
 }
