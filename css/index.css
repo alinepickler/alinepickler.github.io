@@ -2,9 +2,11 @@
   border-bottom: 0.06rem solid  #404040;
 }
 
+/* The photo is absolutely positioned, so reserve its height here */
 .intro {
   margin: 0;
   position: relative;
+  aspect-ratio: 2000 / 547;
 }
 
 .intro-img-mobile {
@@ -141,4 +143,39 @@
 
 .work-card a:hover .work-caption {
   border-bottom-color: #404040;
+}
+
+.about-text {
+  margin: 0;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+.exp-list {
+  margin: 0;
+  padding: 0;
+}
+
+.exp-item {
+  display: flex;
+  padding: 1rem 0;
+  border-top: 0.06rem solid #D9D9D9;
+}
+
+.exp-years {
+  flex: 0 0 25%;
+  padding-right: 1.2rem;
+  color: grey;
+}
+
+.exp-role {
+  flex: 1;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.exp-desc {
+  display: block;
+  margin-top: 0.4rem;
+  font-size: 0.95rem;
 }

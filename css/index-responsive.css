@@ -11,6 +11,7 @@
     margin-top: 0;
     position: relative;
     z-index: 1;
+    aspect-ratio: 1200 / 537;
   }
 
   .intro-img {
@@ -86,6 +87,29 @@
   .work-caption {
     margin-top: 1.5rem;
     font-size: 4rem;
+  }
+
+  .about-text {
+    font-size: 3.2rem;
+  }
+
+  .exp-item {
+    display: block;
+    padding: 3rem 0;
+  }
+
+  .exp-years {
+    padding: 0 0 1rem 0;
+    font-size: 2.8rem;
+  }
+
+  .exp-role {
+    font-size: 3.2rem;
+  }
+
+  .exp-desc {
+    margin-top: 1rem;
+    font-size: 2.8rem;
   }
 
   .case-text-box {
