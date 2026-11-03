@@ -1,6 +1,6 @@
 // Shows a frame's rendered size as a redline dimension when it is hovered or focused
 (function () {
-  var frames = document.querySelectorAll(".work-item, .case-img-box, .case .blueprint");
+  var frames = document.querySelectorAll(".hero-frame, .work-item, .case-img-box, .case .blueprint");
 
   for (var i = 0; i < frames.length; i++) {
     frames[i].classList.add("is-measurable");

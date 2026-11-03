@@ -145,12 +145,8 @@
   transition: filter 0.3s;
 }
 
-.hero-dim {
-  margin-top: 10px;
-}
-
 .hero-caption {
-  margin-top: 8px;
+  margin-top: 12px;
   font-size: var(--text-sm);
   color: var(--ink-3);
 }
@@ -206,20 +202,6 @@
   .hero.is-spec .ann-swatches {
     animation: m-rise 0.4s var(--d) both;
   }
-
-  /* The dimension line under the hero frame draws itself on load:
-     left tick, line to the value, value, line onwards, right tick */
-  .hero-dim::before,
-  .hero-dim::after {
-    transform-origin: left center;
-    animation: m-draw-x 0.4s cubic-bezier(0.2, 0.7, 0.2, 1) both;
-  }
-
-  .hero-dim::before { animation-delay: 0.35s; }
-  .hero-dim::after { animation-delay: 0.8s; }
-  .hero-dim .dim-value { animation: m-fade 0.3s 0.7s both; }
-  .hero-dim .dim-ticks::before { animation: m-fade 0.2s 0.3s both; }
-  .hero-dim .dim-ticks::after { animation: m-fade 0.2s 1.15s both; }
 }
 
 @keyframes m-pop {
