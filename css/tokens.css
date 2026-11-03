@@ -258,9 +258,37 @@ a.menu-item:hover {
   color: var(--mark);
 }
 
+/* Back to top is an action on the page, the other two leave it: its arrow
+   and a hairline set the two groups apart */
 .footer-links {
   display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.footer-external {
+  display: flex;
   gap: 24px;
+  padding-left: 28px;
+  border-left: 1px solid var(--line);
+}
+
+.footer-top::before {
+  content: "↑";
+  content: "↑" / "";
+  display: inline-block;
+  margin-right: 8px;
+  transition: transform 0.2s ease;
+}
+
+.footer-top:hover::before {
+  transform: translateY(-3px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .footer-top::before {
+    transition: none;
+  }
 }
 
 .footer-links a {
@@ -278,6 +306,15 @@ h1, h2, h3 {
 }
 
 @media only screen and (max-width: 779.98px) {
+  .footer-links {
+    gap: 16px;
+  }
+
+  .footer-external {
+    gap: 16px;
+    padding-left: 16px;
+  }
+
   .my-name {
     font-size: 22px;
   }
