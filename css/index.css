@@ -62,7 +62,6 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
   cursor: pointer;
-  transition: color 0.3s ease;
 }
 
 .spec-btn + .spec-btn {
@@ -74,34 +73,49 @@
   color: var(--bg);
 }
 
-/* With the script, a dark block slides behind the active button instead of
-   the background jumping; js/hero-spec.js sets its position and width */
-.spec-toggle.has-slider::before {
-  content: "";
+/* With the script, a dark block with light copies of the labels slides
+   over the buttons. It is clipped to the active button, so each letter
+   changes colour exactly where the block edge passes, with no fade.
+   js/hero-spec.js builds the block and sets its clip to the active button. */
+.spec-mask {
+  position: absolute;
+  inset: -1px;
+  z-index: 2;
+  background: var(--ink);
+  color: var(--bg);
+  pointer-events: none;
+  clip-path: inset(0 100% 0 0);
+  transition: clip-path 0.45s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.spec-mask-label {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 0;
-  width: var(--slider-w, 0);
-  transform: translateX(var(--slider-x, 0));
-  background: var(--ink);
-  transition: transform 0.45s cubic-bezier(0.65, 0, 0.35, 1), width 0.45s cubic-bezier(0.65, 0, 0.35, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .spec-toggle.has-slider .spec-btn.is-active {
   background: transparent;
+  color: var(--ink);
 }
 
-.spec-toggle.is-measuring::before {
+.spec-toggle.is-measuring .spec-mask {
   transition: none;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .spec-btn,
-  .spec-toggle.has-slider::before {
+  .spec-mask {
     transition: none;
   }
 }
+
 
 .hero-note {
   margin: 16px 0 0 0;

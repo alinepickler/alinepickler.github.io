@@ -21,14 +21,17 @@
     moveSlider();
   }
 
-  // Places the sliding block behind the active button. The first placement
+  // Places the sliding block over the active button. The first placement
   // (and any after a resize or the fonts loading) happens without animation.
   function moveSlider(instant) {
     var active = toggle.querySelector(".spec-btn.is-active");
     if (!active) return;
     if (instant) toggle.classList.add("is-measuring");
-    toggle.style.setProperty("--slider-x", active.offsetLeft + "px");
-    toggle.style.setProperty("--slider-w", active.offsetWidth + "px");
+    // The block also covers the toggle's border, so offsets include it
+    var edge = toggle.clientLeft;
+    var left = active.offsetLeft + edge;
+    var right = toggle.clientWidth - active.offsetLeft - active.offsetWidth + edge;
+    mask.style.clipPath = "inset(0 " + right + "px 0 " + left + "px)";
     if (instant) {
       toggle.getBoundingClientRect();
       toggle.classList.remove("is-measuring");
@@ -36,7 +39,31 @@
   }
 
   function placeSlider() {
+    alignMaskLabels();
     moveSlider(true);
+  }
+
+  // Light copies of the labels inside the sliding block, lined up with the
+  // real buttons
+  var mask = document.createElement("span");
+  var maskLabels = [];
+  mask.className = "spec-mask";
+  mask.setAttribute("aria-hidden", "true");
+  for (var m = 0; m < specButtons.length; m++) {
+    var label = document.createElement("span");
+    label.className = "spec-mask-label";
+    label.textContent = specButtons[m].textContent;
+    mask.appendChild(label);
+    maskLabels.push(label);
+  }
+  toggle.appendChild(mask);
+
+  function alignMaskLabels() {
+    for (var i = 0; i < specButtons.length; i++) {
+      var border = parseFloat(getComputedStyle(specButtons[i]).borderLeftWidth) || 0;
+      maskLabels[i].style.left = specButtons[i].offsetLeft + border + toggle.clientLeft + "px";
+      maskLabels[i].style.width = specButtons[i].offsetWidth - border + "px";
+    }
   }
 
   toggle.classList.add("has-slider");
