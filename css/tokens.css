@@ -171,8 +171,47 @@ a.menu-item:hover {
   border-bottom: 1px solid var(--ink);
 }
 
+/* Signature: the name in the heading font with the role in mono */
+.my-name-bg {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+}
+
+.my-name-bg-mobile {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.menu-and-header a:has(.my-name),
+.menu-mobile-box a:has(.my-name) {
+  text-decoration: none;
+}
+
 .my-name {
-  font-size: 22px;
+  font-family: var(--font-heading);
+  font-stretch: var(--heading-stretch);
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-transform: none;
+  color: var(--ink);
+}
+
+.my-role {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  white-space: nowrap;
+}
+
+.my-role::before {
+  content: "/ ";
+  color: var(--line);
 }
 
 /* Shared footer */
@@ -187,12 +226,36 @@ a.menu-item:hover {
   margin-top: var(--section-gap);
   padding-top: 24px;
   padding-bottom: 48px;
+  align-items: center;
   border-top: 1px solid var(--line);
   font-family: var(--font-mono);
   font-size: 13px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--ink-2);
+}
+
+/* Footer signature: "AP." in the heading font with the pink dot, the same
+   mark as the browser tab icon, followed by the year */
+.footer-sign {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 14px;
+}
+
+.ap-mark {
+  font-family: var(--font-heading);
+  font-stretch: var(--heading-stretch);
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  text-transform: none;
+  color: var(--ink);
+}
+
+.ap-mark .dot {
+  color: var(--mark);
 }
 
 .footer-links {
@@ -216,7 +279,12 @@ h1, h2, h3 {
 
 @media only screen and (max-width: 779.98px) {
   .my-name {
-    font-size: 15px;
+    font-size: 22px;
+  }
+
+  /* On phones the signature is just the name */
+  .my-name-bg-mobile .my-role {
+    display: none;
   }
 
   .menu-mobile-box,
