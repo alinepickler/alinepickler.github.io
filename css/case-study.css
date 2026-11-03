@@ -136,6 +136,156 @@ img {
   color: var(--accent);
 }
 
+/* Results: ink numbers and grey footnotes; pink only marks the
+   conversion signal (affiliate clicks against orders) */
+.stat-market {
+  margin-bottom: 10px;
+  font-family: var(--font-mono);
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
+.stat-market-meta {
+  letter-spacing: 0.02em;
+  text-transform: none;
+  color: var(--ink-3);
+}
+
+.stat-num {
+  position: relative;
+  display: table;
+  font-family: var(--font-heading);
+  font-stretch: var(--heading-stretch);
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 1;
+  color: var(--ink);
+}
+
+.stat-source {
+  margin-top: 4px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  line-height: 1.45;
+  color: var(--ink-3);
+}
+
+.stat-signal .stat-num {
+  display: inline-block;
+  color: var(--red-600);
+}
+
+/* Redline bracket under the signal number */
+.stat-mark {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -7px;
+  height: 6px;
+  border: 1px solid var(--mark);
+  border-top: 0;
+}
+
+.stat-note {
+  display: inline-block;
+  margin-left: 10px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--red-700);
+  vertical-align: 6px;
+}
+
+.stat-signal b {
+  display: block;
+  margin-top: 6px;
+}
+
+.stat-caption {
+  max-width: 70ch;
+  margin: 28px 0 0 0;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--ink-3);
+}
+
+/* Key takeaway: a margin note with the core phrase marked like a redline */
+.takeaway {
+  display: grid;
+  grid-template-columns: 200px minmax(0, 1fr);
+  column-gap: 40px;
+  margin-top: 96px;
+  padding-top: 40px;
+  border-top: 1px solid var(--line);
+}
+
+.takeaway-label {
+  padding-top: 10px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--red-700);
+}
+
+.takeaway-head {
+  max-width: 22ch;
+  margin: 0 0 16px 0;
+  font-family: var(--font-heading);
+  font-stretch: var(--heading-stretch);
+  font-weight: 600;
+  font-size: clamp(32px, 4.4vw, 56px);
+  line-height: 1.05;
+  letter-spacing: -0.015em;
+}
+
+/* Marker highlight covering the full letter height */
+.takeaway-mark {
+  padding: 0 0.12em;
+  margin: 0 -0.06em;
+  border-radius: 0.12em 0.2em 0.16em 0.22em;
+  background: linear-gradient(transparent 10%, var(--red-200) 10%, var(--red-200) 94%, transparent 94%);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.takeaway-note {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 28px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--red-600);
+}
+
+.takeaway-note::before {
+  content: "";
+  width: 28px;
+  border-top: 1px solid var(--mark);
+}
+
+.takeaway-text {
+  max-width: 62ch;
+  margin: 0 0 16px 0;
+  font-size: 17px;
+  color: var(--ink-2);
+}
+
+@media only screen and (max-width: 779.98px) {
+  .takeaway {
+    display: block;
+    margin-top: 72px;
+  }
+
+  .takeaway-label {
+    margin-bottom: 16px;
+    padding-top: 0;
+  }
+}
+
 /* Room for the fixed mobile header */
 @media only screen and (max-width: 779.98px) {
   .case::before {
