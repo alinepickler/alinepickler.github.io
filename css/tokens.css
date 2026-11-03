@@ -11,14 +11,14 @@
   --bg: #f7f5f1;
   --surface: #f7f5f1;
 
-  /* Redline pink: 500 for marks and rules, 600 for numbers, 700 for link text */
-  --red-100: #faebf0;
-  --red-200: #f4d2de;
-  --red-300: #ebadc3;
-  --red-500: #e0437a;
-  --red-600: #d62462;
-  --red-700: #b31e52;
-  --red-900: #65112e;
+  /* Redline rose pink (hue 332): 500 for marks and rules, 600 for numbers, 700 for link text */
+  --red-100: #faeaf2;
+  --red-200: #f4d2e2;
+  --red-300: #ebadca;
+  --red-500: #e0438c;
+  --red-600: #d02273;
+  --red-700: #b41e64;
+  --red-900: #651138;
 
   --accent: var(--red-700);
   --accent-strong: var(--red-900);

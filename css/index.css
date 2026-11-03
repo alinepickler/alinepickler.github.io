@@ -109,7 +109,7 @@
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s, visibility 0.3s;
-  --red: #E0457B;
+  --red: var(--mark);
 }
 
 .hero.is-spec .spec-layer {
@@ -138,7 +138,7 @@
 
 .ann-box {
   outline: 1px solid var(--red);
-  background: rgba(224, 69, 123, 0.08);
+  background: color-mix(in srgb, var(--red) 8%, transparent);
 }
 
 .ann-box > .ann-label {
