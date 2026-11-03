@@ -30,6 +30,7 @@
   --font-mono: "Red Hat Mono", ui-monospace, monospace;
   --heading-stretch: 78%;
 
+
   --text-sm: 14px;
   --text-md: 16px;
   --text-body: 18px;
@@ -304,6 +305,7 @@ a.menu-item:hover {
 h1, h2, h3 {
   font-stretch: var(--heading-stretch);
 }
+
 
 @media only screen and (max-width: 779.98px) {
   .footer-links {

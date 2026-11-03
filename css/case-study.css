@@ -8,7 +8,7 @@
 
   --color-accent-100: var(--red-100);
   --color-accent-300: var(--line);
-  --color-accent-700: var(--red-700);
+  --color-accent-700: var(--ink-2);
   --color-accent-800: var(--red-900);
   --color-accent-900: var(--ink);
 
@@ -98,23 +98,43 @@ img {
   color: var(--color-accent);
 }
 
-/* Anchor links under the hero heading */
+/* Anchor links under the hero heading: mono, with a hairline below, like
+   the Earlier work page */
 .section-links {
   display: flex;
   flex-wrap: wrap;
   gap: 8px 24px;
   margin-top: 28px;
-  font-size: 16px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--line);
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .case .section-links a {
-  color: var(--color-text);
+  color: var(--ink);
   text-decoration: none;
   border-bottom: 1px solid transparent;
 }
 
-.section-links a:hover {
-  border-bottom-color: var(--color-text);
+.case .section-links a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--mark);
+}
+
+#s1 .section-links + p {
+  margin-top: 32px !important;
+}
+
+/* Figure captions: secondary grey with the name in ink, like the hero caption */
+.case figcaption {
+  color: var(--ink-3);
+}
+
+.case figcaption b {
+  color: var(--ink);
 }
 
 /* Section labels and footer come from css/tokens.css */
