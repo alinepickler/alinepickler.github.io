@@ -35,7 +35,7 @@
     display: block;
     width: 2.5rem;
     height: 0.125rem;
-    background-color: #333;
+    background-color: var(--ink, #333);
     margin: 0.4375rem 0;
     transition: 0.3s;
   }

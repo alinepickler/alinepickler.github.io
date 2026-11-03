@@ -218,7 +218,7 @@
   outline: 1px solid var(--red);
   font-family: var(--font-mono);
   font-size: 10px;
-  color: #1d1f20;
+  color: var(--ink);
 }
 
 .swatch::before {
@@ -334,6 +334,14 @@
 
 .case-text {
   margin: 20px 0 0 0;
+}
+
+.case-action {
+  margin-top: 28px;
+}
+
+.work-more {
+  margin: 32px 0 0 0;
 }
 
 /* Experience */

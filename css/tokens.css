@@ -4,9 +4,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..700&family=Red+Hat+Mono:wght@300;400&display=swap');
 
 :root {
-  --ink: #1e1f24;
-  --ink-2: #5e5f66;
-  --ink-3: #6e6f75;
+  --ink: #33302c;
+  --ink-2: #625d57;
+  --ink-3: #716b64;
   --line: #dcd9d2;
   --bg: #f7f5f1;
   --surface: #f7f5f1;
@@ -231,5 +231,87 @@ h1, h2, h3 {
 
   .menu-mobile {
     background-color: var(--bg);
+  }
+}
+
+/* Redline dot after the name in the header */
+.my-name::after {
+  content: ".";
+  color: var(--mark);
+}
+
+/* Buttons: one solid ink button per view, outline for the rest */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 22px;
+  border: 1px solid var(--ink);
+  background: var(--ink);
+  color: var(--bg);
+  font-family: var(--font-body);
+  font-size: var(--text-md);
+  font-weight: 500;
+  line-height: 1.2;
+  text-decoration: none;
+  transition: box-shadow 0.2s;
+}
+
+.btn::after {
+  content: "→";
+  font-family: var(--font-mono);
+}
+
+.btn:hover {
+  box-shadow: 0 0 0 4px var(--bg), 0 0 0 5px var(--mark);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--ink);
+}
+
+/* Hover measurements: js/measure.js writes the frame's rendered size
+   into data-measure; a dimension line shows it inside the bottom edge */
+.is-measurable {
+  position: relative;
+}
+
+.is-measurable::after {
+  content: attr(data-measure);
+  position: absolute;
+  left: 8px;
+  right: 8px;
+  bottom: 4px;
+  height: 9px;
+  border-left: 1px solid var(--mark);
+  border-right: 1px solid var(--mark);
+  /* the line has a gap in the middle for the measurement */
+  background: linear-gradient(to right,
+    var(--mark) calc(50% - 4em), transparent calc(50% - 4em),
+    transparent calc(50% + 4em), var(--mark) calc(50% + 4em)) center / 100% 1px no-repeat;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  line-height: 9px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: var(--mark);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.is-measurable.is-measuring {
+  border-color: var(--mark) !important;
+}
+
+.is-measurable.is-measuring::after {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn,
+  .is-measurable::after {
+    transition: none;
   }
 }
