@@ -1,7 +1,7 @@
 /* Redline: shared design tokens and components for the whole portfolio.
    Paper and ink, one redline-pink accent, Archivo with semi-condensed
-   headings, Red Hat Mono for labels and measurements. */
-@import url('https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..700&family=Red+Hat+Mono:wght@300;400&display=swap');
+   headings, Red Hat Mono for labels and measurements. The fonts load from
+   each page's <head> with display=block, so text never swaps fonts. */
 
 :root {
   --ink: #33302c;
