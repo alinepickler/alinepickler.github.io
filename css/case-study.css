@@ -247,6 +247,8 @@ img {
   margin: 0 -0.06em;
   border-radius: 0.12em 0.2em 0.16em 0.22em;
   background: linear-gradient(transparent 10%, var(--red-200) 10%, var(--red-200) 94%, transparent 94%);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
 }

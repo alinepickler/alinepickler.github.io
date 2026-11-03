@@ -315,3 +315,100 @@ h1, h2, h3 {
     transition: none;
   }
 }
+
+/* Motion: things draw, sweep and count in as they scroll into view.
+   js/motion.js only marks elements that start below the fold, so content
+   is never hidden if the script does not run, and it does nothing when
+   reduced motion is requested. */
+@keyframes m-fade {
+  from { opacity: 0; }
+}
+
+@keyframes m-rise {
+  from { opacity: 0; transform: translateY(6px); }
+}
+
+@keyframes m-draw-x {
+  from { transform: scaleX(0); }
+}
+
+/* Soft reveal */
+.m-rise.m-pending {
+  opacity: 0;
+  transform: translateY(14px);
+}
+
+.m-rise.m-in {
+  transition: opacity 0.6s cubic-bezier(0.2, 0.7, 0.2, 1), transform 0.6s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+/* Hairlines draw from left to right */
+.m-line.m-pending,
+.m-line.m-in {
+  border-top-color: transparent !important;
+  background-image: linear-gradient(var(--line), var(--line));
+  background-origin: border-box;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100% 1px;
+}
+
+.m-line.m-pending {
+  background-size: 0% 1px;
+}
+
+.m-line.m-in {
+  transition: background-size 0.9s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+/* Key takeaway: the marker sweeps across, then the note line draws */
+.takeaway.m-pending .takeaway-mark {
+  background-size: 0% 100%;
+}
+
+.takeaway.m-in .takeaway-mark {
+  transition: background-size 0.8s 0.5s cubic-bezier(0.6, 0, 0.2, 1);
+}
+
+.takeaway.m-pending .takeaway-note::before {
+  transform: scaleX(0);
+}
+
+.takeaway.m-pending .takeaway-note {
+  opacity: 0;
+}
+
+.takeaway-note::before {
+  transform-origin: left center;
+}
+
+.takeaway.m-in .takeaway-note {
+  transition: opacity 0.3s 1.2s;
+}
+
+.takeaway.m-in .takeaway-note::before {
+  transition: transform 0.4s 1.2s ease-out;
+}
+
+/* Results: after the number counts up, its bracket and note write in */
+.stat-num {
+  font-variant-numeric: tabular-nums;
+}
+
+.stat-signal.m-pending .stat-mark,
+.stat-signal.m-pending .stat-note {
+  clip-path: inset(0 100% 0 0);
+}
+
+.stat-signal.m-in .stat-mark,
+.stat-signal.m-in .stat-note {
+  clip-path: inset(0 0 0 0);
+}
+
+.stat-signal.m-in .stat-mark {
+  transition: clip-path 0.35s ease-out;
+}
+
+.stat-signal.m-in .stat-note {
+  transition: clip-path 0.5s 0.25s ease-out;
+}

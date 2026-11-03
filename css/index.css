@@ -121,6 +121,68 @@
   filter: saturate(0.35) brightness(1.05);
 }
 
+/* Spec view motion: boxes and dimension lines appear one by one,
+   each label just after its mark */
+.spec-layer > :nth-child(1) { --d: 0ms; }
+.spec-layer > :nth-child(2) { --d: 110ms; }
+.spec-layer > :nth-child(3) { --d: 220ms; }
+.spec-layer > :nth-child(4) { --d: 330ms; }
+.spec-layer > :nth-child(5) { --d: 440ms; }
+.spec-layer > :nth-child(6) { --d: 550ms; }
+.spec-layer > :nth-child(7) { --d: 660ms; }
+.spec-layer > :nth-child(8) { --d: 770ms; }
+.spec-layer > :nth-child(9) { --d: 880ms; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero.is-spec .ann-box {
+    animation: m-pop 0.35s var(--d) cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  }
+
+  .hero.is-spec .ann-h {
+    animation: m-clip-x 0.4s var(--d) ease-out both;
+  }
+
+  .hero.is-spec .ann-v {
+    animation: m-clip-y 0.4s var(--d) ease-out both;
+  }
+
+  .hero.is-spec .ann > .ann-label {
+    animation: m-fade 0.25s calc(var(--d) + 220ms) both;
+  }
+
+  .hero.is-spec .ann-swatches {
+    animation: m-rise 0.4s var(--d) both;
+  }
+
+  /* The dimension line under the hero frame draws itself on load:
+     left tick, line to the value, value, line onwards, right tick */
+  .hero-dim::before,
+  .hero-dim::after {
+    transform-origin: left center;
+    animation: m-draw-x 0.4s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  }
+
+  .hero-dim::before { animation-delay: 0.35s; }
+  .hero-dim::after { animation-delay: 0.8s; }
+  .hero-dim .dim-value { animation: m-fade 0.3s 0.7s both; }
+  .hero-dim .dim-ticks::before { animation: m-fade 0.2s 0.3s both; }
+  .hero-dim .dim-ticks::after { animation: m-fade 0.2s 1.15s both; }
+}
+
+@keyframes m-pop {
+  from { opacity: 0; transform: scale(0.97); }
+}
+
+@keyframes m-clip-x {
+  from { clip-path: inset(-30px 100% -30px -30px); }
+  to { clip-path: inset(-30px -30px -30px -30px); }
+}
+
+@keyframes m-clip-y {
+  from { clip-path: inset(-30px -80px 100% -80px); }
+  to { clip-path: inset(-30px -80px -30px -80px); }
+}
+
 .ann {
   position: absolute;
 }
