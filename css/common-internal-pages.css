@@ -24,6 +24,8 @@
   display: flex;
   gap: 24px;
   margin-top: 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--line);
   font-family: var(--font-mono);
   font-size: var(--text-sm);
   letter-spacing: 0.08em;
@@ -59,6 +61,11 @@
 
 .work-section > :not(.section-label) {
   grid-column: 2;
+}
+
+/* The hero ends with a hairline, so the first section sits closer */
+.work-header + .work-section {
+  margin-top: clamp(40px, 5vw, 56px);
 }
 
 .work-intro {
