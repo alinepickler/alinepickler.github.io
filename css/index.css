@@ -37,13 +37,22 @@
   color: var(--ink);
 }
 
-.spec-toggle {
-  display: inline-flex;
+.spec-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
   margin-top: 28px;
+}
+
+.spec-toggle {
+  position: relative;
+  display: inline-flex;
   border: 1px solid var(--ink);
 }
 
 .spec-btn {
+  position: relative;
+  z-index: 1;
   padding: 7px 18px;
   border: 0;
   background: transparent;
@@ -53,6 +62,7 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
   cursor: pointer;
+  transition: color 0.3s ease;
 }
 
 .spec-btn + .spec-btn {
@@ -62,6 +72,35 @@
 .spec-btn.is-active {
   background: var(--ink);
   color: var(--bg);
+}
+
+/* With the script, a dark block slides behind the active button instead of
+   the background jumping; js/hero-spec.js sets its position and width */
+.spec-toggle.has-slider::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: var(--slider-w, 0);
+  transform: translateX(var(--slider-x, 0));
+  background: var(--ink);
+  transition: transform 0.45s cubic-bezier(0.65, 0, 0.35, 1), width 0.45s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.spec-toggle.has-slider .spec-btn.is-active {
+  background: transparent;
+}
+
+.spec-toggle.is-measuring::before {
+  transition: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spec-btn,
+  .spec-toggle.has-slider::before {
+    transition: none;
+  }
 }
 
 .hero-note {
